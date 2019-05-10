@@ -1,0 +1,170 @@
+{{ partial "header.html" . }}
+
+    <div class="" id="intro">
+      <div class="row row-full">
+        <div class="small-12 large-offset-2 large-8 end columns">
+          <h2>
+            <strong>A spec for packaging distributed apps.</strong>
+            <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+          </h2>
+          <p class="subhead">CNABs facilitate the bundling, installing and managing of container-native apps &mdash; and their coupled services.</p>
+
+          <img src="{{.Site.BaseURL}}/img/logo.png" title="CNAB" class="cnab-logo" />
+
+          <div class="text-center">
+            <a class="button primary" href="/docs">View the spec</a>
+            <small><a href="#features">Scroll down for project info and resources.</a></small>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="height-full" id="features">
+            
+      <div class="row row-full">
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+        <div class="show-for-large-up large-4 columns">
+          <img src="{{.Site.BaseURL}}/img/feature-01.svg" alt="Cloud Agnostic" class="feature-01 right" />
+        </div>
+        <div class="small-12 large-4 columns">
+          <h3>Cloud Agnostic</h3>
+          <p class="lead">A CNAB can be composed to utilize whatever infra or services you require - there’s no vendor lock in.</p>
+        </div>
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+      </div>
+
+      <div class="row row-full">
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+        <div class="small-12 large-4 columns">
+          <h3>Deliverable Apps</h3>
+          <p class="lead">CNABs can be used to easily deliver apps across teams, organizations and marketplaces - even shared offline.</p>
+        </div>
+        <div class="show-for-large-up large-4 columns">
+            <img src="{{.Site.BaseURL}}/img/feature-02.svg" alt="Deliverable Apps" class="feature-02 left" />
+          </div>
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+      </div>
+
+      <div class="row row-full">
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+        <div class="show-for-large-up large-4 columns">
+          <img src="{{.Site.BaseURL}}/img/feature-03.svg" alt="Signed & Secure" class="feature-03 right" />
+        </div>
+        <div class="small-12 large-4 columns">
+          <h3>Signed &amp; Secure </h3>
+          <p class="lead">A CNAB can be cryptographically signed, attested, and verified​ to ensure a trustworthy source.</p>
+        </div>
+        <div class="show-for-large-up large-2 columns">&nbsp;</div>
+      </div>
+
+      <!-- <div class="row row-full">
+        <div class="small-12 columns">
+          <p class="text-center bloglink lead"><a href="#">Read the <span class="show-for-large-up">announcement</span> blog post for more &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+        </div>
+      </div> -->
+    
+    </div> <!-- / features -->
+
+    <div class="row row-full" id="resources">
+      <div class="small-12 large-10 large-centered columns">
+        <h3 class="text-center">Resources:</h3>
+
+        <div class="row row-full">
+          <div class="small-12 large-4 columns">
+            <div class="panel panel-spec panel-blue">
+              <a href="https://github.com/deislabs/cnab-spec">
+                <h4>
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;
+                  CNAB Spec
+                </h4>
+                <p>Read the CNAB format specification on GitHub. &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></p>
+              </a>
+            </div>
+          </div>
+          <div class="small-12 large-8 columns">
+            <div class="panel panel-duffle panel-navy">
+              <a href="https://duffle.sh/">
+                <img src="../img/duffle.svg" class="resource-duffle left" alt="Duffle" />
+                <p class="lead">Duffle is a command line tool that allows you to install and manage CNAB bundles. &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="small-12 large-8 columns">
+              <div class="panel panel-bundles panel-green">
+                <a href="https://github.com/deislabs/bundles">
+                  <h4>
+                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;
+                    Sample Bundles
+                  </h4>
+                  <!-- <img src="../img/vscode.png" class="resource-vscode" alt="VS Code Extension" class="left" /> -->
+                  <p>A resource of ready-to-use CNAB bundles and examples to help you create your own. &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                </a>
+              </div>
+            </div>
+            <div class="small-12 large-4 columns">
+              <div class="panel panel-vscode panel-yellowl">
+                <a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.duffle-vscode" title="VS Code Extension">
+                  <h4>
+                    <img src="../img/vscode.png" class="resource-vscode" alt="VS Code Extension" class="left" />
+                    VS Code Extension</h4>
+                  <p>Use Duffle with ease inside the VS Code editor. &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-12 large-8 large-centered columns text-center">
+            <a class="text-center" href="community-projects/">More community projects here <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- / resources -->
+    
+
+    <div class="row row-full" id="credits">
+      <div class="small-12 large-10 large-centered columns">
+        <h3 class="text-center sep sep-sides">Brought to you by:</h3>
+
+        <div class="text-center">
+          <a href="https://azure.microsoft.com" target="_blank"><img src="../img/logo-azure.png" /></a>
+          <a href="https://www.docker.com/" target="_blank"><img src="../img/logo-docker.png" /></a>
+          <a href="https://bitnami.com/" target="_blank"><img src="../img/logo-bitnami.png" /></a>
+          <a href="https://www.hashicorp.com/" target="_blank"><img src="../img/logo-hashicorp.png" /></a>
+          <a href="https://www.codefresh.io/" target="_blank"><img src="../img/logo-codefresh.png" /></a>
+
+        </div>
+        <br>
+        <div class="sep"></div>
+      </div>
+    </div>
+
+    <div class="row row-full" id="communications">
+      <div class="small-12 large-10 large-centered columns">
+        <h3 class="text-center">Communications:</h3>
+
+        <div class="small-12 large-4 columns">
+          <h4>Meetings</h4>
+          <p><a href="community-meetings">Community weekly meetings</a> take place each Wednesday at 09:00AM US Pacific.
+          </p>
+        </div>
+        <div class="small-12 large-4 columns">
+          <h4>Mailing List</h4>
+          <p><a href="mailto:dev@opencontainers.org">dev@opencontainers.org</a><br>   
+            Sign up at <a href="https://groups.google.com/a/opencontainers.org/forum/#!forum/dev">Open Containers forum</a>.</p>
+        </div>
+        <div class="small-12 large-4 columns">
+          <h4>Slack Channel</h4>
+          <p>Join the <a href="https://cloud-native.slack.com/messages/CEX1W7WMD/">#cnab</a> channel for related discussion in the <a href="https://slack.cncf.io/">CNCF's Slack</a>.</p>
+        </div>
+
+      </div>
+    </div>
+
+{{ partial "footer.html" . }}
