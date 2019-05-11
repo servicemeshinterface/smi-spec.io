@@ -1,4 +1,4 @@
-baseURL = "https://smi-spec.io"
+baseURL = "https://smi-spec.io/"
 title = "SMI - Service Mesh Interface"
 theme = "smi"
 languageCode = "en-us"
