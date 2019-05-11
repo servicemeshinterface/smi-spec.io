@@ -1,4 +1,6 @@
-A simple website for the [SMI spec](https://github.com/deislabs/smi-spec).
+![smi-github](https://user-images.githubusercontent.com/686194/57564913-f8d4cf00-7368-11e9-879f-588440bc4cb5.png)
+
+A simple website for the [SMI](https://github.com/deislabs/smi-spec) specification - [smi-spec.io](https://smi-spec.io)
 
 # Editing Content
 
