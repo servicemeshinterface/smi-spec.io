@@ -9,7 +9,7 @@ smi-spec.io is static site. The landing page content can be edited at `themes/sm
 # Notes
 
 * built with the [Hugo](https://gohugo.io/) static site generator
-* custom cnab theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/deislabs/smi-spec.io/tree/master/themes/smi)
+* custom smi theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/deislabs/smi-spec.io/tree/master/themes/smi)
 * uses Gulp for asset pipelines
 * deployed to [Netlify](https://app.netlify.com/) via merges to master. @flynnduism is admin of this. 
 * metrics tracked via Google Analytics
