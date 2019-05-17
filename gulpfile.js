@@ -36,8 +36,7 @@ gulp.task('styles', function () {
 gulp.task('images', function () {
   return streamqueue({objectMode: true},
     gulp.src('themes/smi/static/img/**/*{.jpg, .png, .gif}')
-      .pipe(cache(imagemin({optimizationLevel: 3, progressive: true, interlaced: true}))),
-    gulp.src('themes/smi/static/img/**/*')
+      .pipe(cache(imagemin({optimizationLevel: 3, progressive: true, interlaced: true})))
       .pipe(gulp.dest(destination + '/img'))
   )
 });
@@ -64,7 +63,7 @@ gulp.task('copyall', function () {
 
 
 // 'gulp' default task to build the site assets
-gulp.task('default', gulp.series('styles', 'images', 'copy'), function() { });
+gulp.task('default', gulp.series(['styles', 'images', 'copy']), function() { });
 
 // 'gulp watch' to watch for changes during dev
 gulp.task('watch', function () {

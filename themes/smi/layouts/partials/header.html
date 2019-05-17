@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>SMI: Service Mesh Interface.</title>
+  <title>SMI | A standard interface for service meshes on Kubernetes.</title>
 
   <!-- Meta -->
   {{- if eq .Kind "page" }}
@@ -52,6 +52,8 @@
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu:400,500&display=swap" rel="stylesheet">
 </head>
 
 <body class="{{if eq .Kind `page` }}single{{else}}list{{ if .IsHome }} home{{ end }}{{end}}">
@@ -60,7 +62,8 @@
       <div class="show-for-large-up large-1 columns"></div>
       <div class="small-6 large-5 columns">
         <h1 class=""><a href="{{.Site.BaseURL}}">
-          SMI
+          <span class="long"><img src="{{.Site.BaseURL}}/img/logo-name.svg" title="Service Mesh Interface" /></span>
+          <span class="short"><img src="{{.Site.BaseURL}}/img/logo-name-short.svg" title="SMI" /></span>
         </a></h1>
       </div>
 
