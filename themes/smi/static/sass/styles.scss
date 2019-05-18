@@ -351,7 +351,7 @@ small {
 
   nav {
     ul.menu-desktop {
-      margin-top: 5.75rem;
+      margin-top: 5.667rem;
 
       li {
         margin: 0 1rem;
@@ -453,6 +453,9 @@ body.list.noscroll {
   .button {
     @include button;
     font-size: $base-font;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     @include wipe($navy);
 
     &:hover {
@@ -466,11 +469,35 @@ body.list.noscroll {
     position: absolute;
     left: 3.5vw;
     bottom: 21.5vh;
+
+    .panel-wrapper {
+      width: 100%;
+      min-height: 10vh;
+      position: relative;
+
+      .button {
+        position: absolute;
+        top: 3.6rem;
+        width: 12rem;
+        right: 1.25rem;
+        padding: 0;
+      }
+    }
     
     h3 {
       color: $navy;
       font-size: 1.5rem;
+      margin-bottom: 1.333rem;
+    }
 
+    ul {
+      column-count: 2;
+      font-size: 1.125rem;
+      width: 78%;
+
+      li {
+        margin: 0 2.5rem 0.5rem 0;
+      }
     }
   }
 
@@ -481,11 +508,12 @@ body.list.noscroll {
 
 
 #features {
-  // background-color: $navy;
-  // background: linear-gradient(lighten($navy, 7.5%), darken($navy, 7.5%));
   padding-top: 9.25rem;
   padding-bottom: 6.333rem;
-  background: rgba(90,129,224,0.7);
+
+  .panel {
+    margin-bottom: 3rem;
+  }
 
   img {
     margin: 0 2rem 8.25rem;
@@ -563,6 +591,9 @@ body.list.noscroll {
 #credits {
   padding-top: 4rem;
   padding-bottom: 8rem;
+  background: linear-gradient(rgba(255,255,255,0), #F6FCFC 20%);
+  position: relative;
+  z-index: 500;
 
   h3 {
     margin-bottom: 2rem;

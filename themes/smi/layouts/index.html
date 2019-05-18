@@ -10,19 +10,17 @@
           <img src="{{.Site.BaseURL}}/img/logo.png" title="SMI logo" class="smi-logo" />
 
           <div class="panel">
-            <div class="row">
-              <div class="small-8 columns">
+            <div class="row panel-wrapper">
+              <div class="small-12 columns">
                 <h3>Service Mesh Interface provides:</h3>
 
                 <ul>
-                  <li>A standard interface for meshes on Kubernetes</li>
-                  <li>A basic feature set for the most common mesh use cases</li>
-                  <li>Flexibility to support new mesh capabilities over time</li>
-                  <li>Space for the ecosystem to innovate with mesh technology</li>
+                  <li>A standard interface for service meshes on Kubernetes</li>
+                  <li>A basic feature set for the most common service mesh use cases</li>
+                  <li>Flexibility to support new service mesh capabilities over time</li>
+                  <li>Space for the ecosystem to innovate with service mesh technology</li>
                 </ul>
-              </div>
 
-              <div class="small-4 columns">
                 <a class="button primary" href="https://github.com/deislabs/smi-spec">View the Spec</a>
               </div>
             </div>
@@ -39,14 +37,17 @@
 
         <div class="row">
           <div class="small-12 large-2 columns">&nbsp;</div>
-          <div class="small-12 large-4 columns">
+          <div class="small-12 large-7 columns end">
             <div class="panel">
                 <h3>Kubernetes Native</h3>
                 <p>The SMI is specified as a collection of Kubernetes Custom Resource Definitions (CRD) and Extension API Servers. These APIs can be installed onto any Kubernetes cluster and manipulated using standard tools.</p>
             </div>
           </div>
-          <div class="small-12 large-1 columns">&nbsp;</div>
-          <div class="small-12 large-4 columns end">
+        </div>
+
+        <div class="row">
+          <div class="small-12 large-3 columns">&nbsp;</div>
+          <div class="small-12 large-7 columns end">
             <div class="panel">
               <h3>Provider Agnostic</h3>
               <p>The goal of the SMI API is to provide a common, portable set of service mesh APIs which a Kubernetes user can use in a provider agnostic manner. In this way people can define applications that use service mesh technology without tightly binding to any specific implementation.</p>
@@ -55,8 +56,8 @@
         </div>
 
         <div class="row">
-          <div class="small-12 large-3 columns">&nbsp;</div>
-          <div class="small-12 large-4 columns end">
+          <div class="small-12 large-4 columns">&nbsp;</div>
+          <div class="small-12 large-7 columns end">
             <div class="panel">
               <h3>What SMI covers</h3>
     
