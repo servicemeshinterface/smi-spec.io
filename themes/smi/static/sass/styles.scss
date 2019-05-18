@@ -29,6 +29,7 @@ $red: #E83683;
 $green: #2EC4B6;
 $yellow: #CCFF66;
 // accent colors
+$bg: #F6FCFC;
 $bluel: #D3DDF7;
 $yellowl: #FFF3E6;
 
@@ -132,9 +133,9 @@ $body: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif
   &::after {
     position: absolute; 
     left: -20%;
-    top: 125%;
+    top: 102%;
     width: 200%;
-    height: 150%;
+    height: 100%;
     display: inline-block;
     background-blend-mode: overlay;
     content: "";
@@ -160,12 +161,13 @@ $body: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif
 @mixin button($color: $navy) {
   box-sizing: border-box;
   color: $color;
+  text-align: center;
   width: 15rem;
-  height: 4.5rem;
+  height: 3.5rem;
   margin: 2rem auto;
   line-height: 3;
-  padding: 0 2rem;
-  border: 4px solid $color;
+  padding: 0 1.5rem;
+  border: 2px solid $color;
   z-index: 600;
   background: transparent !important;
   @include brandingBold;
@@ -234,6 +236,26 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+// Dot Grid
+$bg-color: #F6FCFC;
+$dot-color: #D8D8D8;
+
+// Dimensions
+$dot-size: 0.35vw;
+$dot-space: 4vw;
+
+body {
+  background: #F6FCFC;
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+  background-size: $dot-space $dot-space;
+  height: 100vh;
+  width: 100vw;
+}
+
+
 // Typographic Scale
 // ---------------------------------------
 $base-font:  18px;                 // 18 - p
@@ -279,6 +301,12 @@ small {
   font-size: $base-sm;
 }
 
+.panel {
+  background: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.15);
+}
+
 
 // Nav
 // ---------------------------------------
@@ -288,9 +316,10 @@ small {
   min-height: 10rem;
   position: relative;
   z-index: 1000;
+  background: #F6FCFC;;
   
   h1 {
-    margin: 0;
+    margin: 0 0 0 -1.5vw;
     padding: 2rem 0 0;
     text-align: left;
     @include ripple;
@@ -322,7 +351,7 @@ small {
 
   nav {
     ul.menu-desktop {
-      margin-top: 5rem;
+      margin-top: 5.75rem;
 
       li {
         margin: 0 1rem;
@@ -393,23 +422,20 @@ body.list.noscroll {
 // ---------------------------------------
 #intro {
   padding-top: 7.5rem;
-  z-index: -10;
-  min-height: 53rem !important;
+  min-height: 90vh;
+  overflow: hidden;
+  
+  .intro-wrap {
+    min-height: 90vh;
+    position: relative;
+  }
 
   h2 {
     position: relative;
     font-size: 3vw;
-    margin-left: -4rem;
-
-    strong {
-      @include wipe($green);
-      color: $navy;
-      background-color: $yellowl;
-      margin: 0 0 1.5rem;
-      padding: 1.25rem 2.5rem;
-      display: inline-block;  
-      z-index: 500;
-    } 
+    color: $navy;
+    max-width: 50vw;
+    margin: 8.125vh 0 0 14.5vw;
 
     .corner,
     .corner-br {
@@ -417,26 +443,34 @@ body.list.noscroll {
     }
   }
 
-  .subhead {
-    padding: 0 5% 0 1rem;
-    margin: -2rem 0 12rem -2rem;
-  }
-
   .smi-logo {
-    position: absolute;
-    top: 24rem;
-    left: 50%;
-    margin-left: 26rem;
-    width: 8rem;
+    position: fixed;
+    top: 35.75vh;
+    left: 7.333vw;
+    width: 10vw;
   }
 
   .button {
     @include button;
-    font-size: $base-lg;
-    @include wipe($green);
+    font-size: $base-font;
+    @include wipe($navy);
 
     &:hover {
       border: 5px solid $navy;
+    }
+  }
+
+  .panel {
+    width: 76vw;
+    min-height: 10vh;
+    position: absolute;
+    left: 3.5vw;
+    bottom: 21.5vh;
+    
+    h3 {
+      color: $navy;
+      font-size: 1.5rem;
+
     }
   }
 
@@ -447,47 +481,19 @@ body.list.noscroll {
 
 
 #features {
-  background-color: $navy;
-  background: linear-gradient(lighten($navy, 7.5%), darken($navy, 7.5%));
+  // background-color: $navy;
+  // background: linear-gradient(lighten($navy, 7.5%), darken($navy, 7.5%));
   padding-top: 9.25rem;
   padding-bottom: 6.333rem;
-
-  h3, h4, p {
-    color: white;
-  }
+  background: rgba(90,129,224,0.7);
 
   img {
     margin: 0 2rem 8.25rem;
-
-    &.feature-02 {
-      margin-top: 1rem;
-      margin-bottom: 12rem;
-    }
-  
-    &.feature-03 {
-      margin-top: -2.5rem;
-    }
   }
 
   h3 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  p.lead {
-    padding-right: 12.5%;
-  }
-
-  p.bloglink {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-
-    a {
-      color: $yellowl;
-      line-height: 1.825;
-      @include ripple($yellowl);
-    }
   }
 }
 
@@ -546,62 +552,6 @@ body.list.noscroll {
       line-height: 1.875;
       margin-bottom: 0.5rem;
     }
-
-    &.panel-navy {
-      a {
-        border-color: $navy;
-      }
-      
-      .fa {
-        color: $navy;
-      }
-    }
-
-    &.panel-blue {
-      a {
-        border-color: $bluel;
-      }
-      
-      .fa {
-        color: $navy;
-      }
-    }
-
-    &.panel-yellow {
-      &:hover {
-        border-color: $bluel !important;
-      }
-    }
-
-    &.panel-green {
-      a {
-        border-color: $green;
-      }
-      .fa {
-        color: $green;
-      }
-    }
-
-    &.panel-bundles {
-      a {
-        background: url(../img/screener.png) no-repeat right top ;
-        padding-right: 30%;
-      }
-    }
-
-    &.panel-duffle {
-      img {
-        margin: 0.2rem 3.5rem 0.2rem 1rem;
-      }
-
-      a {
-        padding: 1.2rem 2rem;
-      }
-
-      p {
-        margin: 1.5rem 0;
-      }
-    }
   }
 
   h3, p {
@@ -609,27 +559,6 @@ body.list.noscroll {
   }
 }
 
-.row#communications {
-  padding-bottom: 10rem;
-  h3, p {
-    color: $navy;
-  }
-
-  h4 {
-    margin: 3.5rem auto 1rem;
-    font-size: 1.25rem;
-    color: $navy;
-  }
-
-  p {
-    font-size: 1.125rem;
-    line-height: 1.925;
-
-    a {
-      @include ripple;
-    }
-  }
-}
 
 #credits {
   padding-top: 4rem;
@@ -637,6 +566,7 @@ body.list.noscroll {
 
   h3 {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
   
   h3, p {
@@ -646,6 +576,8 @@ body.list.noscroll {
 
   img {
     max-width: 25%;
+    margin: 1rem auto;
+    background-blend-mode: multiply;
   }
 }
 
@@ -680,7 +612,7 @@ body.list.noscroll {
 }
 
 #footer {
-  background-color: white;
+  background-color: #F9F9F9;
   border-top: 2px solid rgba(0,0,0,0.05);
   position: relative;
   min-height: 3rem;
@@ -878,9 +810,10 @@ article.post {
   #features {
     padding-top: 1.5rem;
     padding-bottom: 2.5rem;
+    margin-bottom: 10rem;
 
     h3 {
-      font-size: $base-lg;
+      font-size: $base-xlg;
       margin: 3rem 0 0.825rem;
     }
 
@@ -893,72 +826,9 @@ article.post {
       display: none;
     }
 
-    p.bloglink a {
-      @include button(white);
-      @include wipe;
-      line-height: 3;
-      width: 100%;
-      margin: 2.5rem 0 0.5rem;
-      height: auto;
-    }
-  }
-
-  #resources {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    
-    h3 {
-      font-size: $base-lg;
-      margin-bottom: 3rem;
-    }
-
     .panel {
-      width: 100%;
-      margin: 0 0 2rem;
-      padding: 0;
-      
-      a {
-        padding: 1rem 1.25rem;
-        min-height: 3rem;
-
-        h4 {
-          margin-bottom: 0.825rem;
-        }
-
-        p {
-          padding-right: 0;
-          line-height: 1.5;
-          font-size: $base-sm;
-
-          .fa {
-            display: none;
-          }
-        }
-      }
-
-      &.panel-bundles {
-        a {
-          background-image: none;
-          padding-right: 1.25rem;
-        }
-      }
-
-      &.panel-duffle {
-        font-size: $base-sm;
-
-        img {
-          float: right;
-          max-width: 12vw;
-          margin: 1.5rem 1.75rem 1.5rem 0.25rem;
-        }
-
-        p.lead {
-          font-size: 3.25vw;
-        }
-
-      }
+      min-height: 25vh;
     }
-
   }
 
   #credits {
