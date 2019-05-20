@@ -654,11 +654,16 @@ body.list.noscroll {
     color: $navy;
   }
 
+  p {
+    margin: 1.25rem 2rem;
+  }
+
   .panel {
-    width: 76vw;
-    min-height: 10vh;
+    width: 67vw;
+    min-height: 7.5rem;
     margin: 0 auto;
     position: relative;
+    margin-top: 4rem;
 
     .button {
       @include button;
