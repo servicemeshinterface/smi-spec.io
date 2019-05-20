@@ -820,7 +820,7 @@ article.post {
   }
 
   .height-full {
-    min-height: 50vh !important;
+    min-height: 100vh !important;
   }
 
   .small-12 {
@@ -838,19 +838,13 @@ article.post {
     h2 {
       font-size: $base-xlg;
       display: inline-block;
-      margin: 4.5rem -1.6rem 2rem -1.6rem;
+      margin: 4.5rem 0 2rem 0;
       font-size: 6vw;
       z-index: 500;
       
       strong {
         padding: 1rem 20% 1rem 1.6rem;
       }
-    }
-
-    p.subhead {
-      font-size: $base-lg;
-      margin: -2rem 0 1rem 0;
-      padding: 0;
     }
 
     .smi-logo {
@@ -863,12 +857,30 @@ article.post {
       z-index: 850;
     }
 
-    .button {
-      margin: 2rem 0;
+    .panel {
+      width: 76vw;
+      min-height: 10vh;
       position: relative;
       left: auto;
-      right: auto;
-      width: 100%;
+      bottom: auto;
+
+      .panel-wrapper {
+        .button {
+          margin: 2rem 0;
+          position: relative;
+          left: auto;
+          right: auto;
+          width: 100%;
+        }
+  
+        ul {
+          column-count: 1;
+
+          li {
+            margin: 0 0 0.5rem;
+          }
+        }
+      }
     }
   }
 
