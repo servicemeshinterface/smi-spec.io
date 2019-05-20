@@ -605,9 +605,11 @@ body.list.noscroll {
     position: relative;
   }
 
-  img {
+  img,
+  .partner {
     max-width: 25%;
     margin: 1rem auto;
+    // display: inline-block;
     background-blend-mode: multiply;
   }
 }
@@ -639,6 +641,33 @@ body.list.noscroll {
 
   &::after {
     right: -10%;
+  }
+}
+
+#communications {
+  padding-bottom: 10rem;
+  background-color: #F7FCFC;
+  position: relative;
+  z-index: 800;
+  
+  h3, p {
+    color: $navy;
+  }
+
+  .panel {
+    width: 76vw;
+    min-height: 10vh;
+    margin: 0 auto;
+    position: relative;
+
+    .button {
+      @include button;
+      font-size: $base-font;
+      position: absolute;
+      right: 3vw;
+      min-height: 2.25rem;
+      top: 0;
+    }
   }
 }
 
