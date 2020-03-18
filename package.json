@@ -2,11 +2,11 @@
   "name": "smi-spec.io",
   "version": "1.0.0",
   "description": "site for service mesh interface",
-  "author": "deislabs",
+  "author": "servicemeshinterface",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deislabs/smi-spec.io.git"
+    "url": "git+https://github.com/servicemeshinterface/smi-spec.io.git"
   },
   "devDependencies": {
     "autoprefixer": "9.7.4",

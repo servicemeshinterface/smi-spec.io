@@ -5,6 +5,7 @@ authorname: "Smi Spec"
 author: "@SMI_spec"
 authorlink: "https://twitter.com/SMI_spec"
 date: "2020-03-18T09:00:00+08:00"
+draft: "true"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod `tempor incididunt` ut labore et dolore magna aliqua.

@@ -1,5 +1,10 @@
+{{ $posts := where site.RegularPages "Section" "blog" }}
+{{ $hasPosts := gt (len $posts) 0 }}
+
 <li><a href="https://github.com/deislabs/smi-spec">Specification</a></li>
+{{ if $hasPosts }}
 <li><a href="/blog">Blog</a></li>
+{{ end }}
 <li><a href="https://aka.ms/smi/slack">Slack</a></li>
 <li><a href="https://twitter.com/smi_spec" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 <li><a href="https://github.com/deislabs/smi-spec" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
