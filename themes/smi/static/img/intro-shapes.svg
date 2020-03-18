@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="588px" height="478px" viewBox="0 0 588 478" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="website" transform="translate(-681.000000, -290.000000)" fill-rule="nonzero">
+            <g id="Hero" transform="translate(85.000000, 290.000000)">
+                <g id="Group-2" transform="translate(596.000000, 0.000000)">
+                    <g id="line-2" transform="translate(0.000000, 12.000000)">
+                        <path d="M4,105.5 L565,105.5" id="Path-3" stroke="#BCCCED" stroke-width="9"></path>
+                        <path d="M492.035156,0.1875 L386.191406,106.03125" id="Path-4" stroke="#BCCCED" stroke-width="9"></path>
+                        <path d="M529.035156,106.1875 L423.191406,212.03125" id="Path-4" stroke="#BCCCED" stroke-width="9" transform="translate(476.113281, 159.109375) scale(1, -1) translate(-476.113281, -159.109375) "></path>
+                        <path d="M559,107 L143,523" id="Path-4" stroke="#BCCCED" stroke-width="9" transform="translate(351.000000, 315.000000) scale(1, -1) translate(-351.000000, -315.000000) "></path>
+                        <path d="M213,211 L143,281" id="Path-4" stroke="#BCEDC4" stroke-width="9" transform="translate(178.000000, 246.000000) scale(1, -1) translate(-178.000000, -246.000000) "></path>
+                        <circle id="Oval-3" fill="#2A2DDE" cx="4.5" cy="105.5" r="4.5"></circle>
+                        <circle id="Oval-3" fill="#2A2DDE" cx="388.5" cy="105.5" r="4.5"></circle>
+                        <circle id="Oval-3" fill="#2A2DDE" cx="143.5" cy="105.5" r="4.5"></circle>
+                        <circle id="Oval-3" fill="#42A7B6" cx="143.5" cy="211.5" r="4.5"></circle>
+                        <circle id="Oval-3" fill="#42A7B6" cx="213.5" cy="281.5" r="4.5"></circle>
+                    </g>
+                    <circle id="Oval-2" stroke="#42A7B6" stroke-width="8" fill="#FFFFFF" cx="493" cy="12" r="8"></circle>
+                    <circle id="Oval-2" stroke="#78C0C0" stroke-width="8" fill="#FFFFFF" cx="493" cy="188" r="8"></circle>
+                    <circle id="Oval-2" stroke="#FEC1C0" stroke-width="8" fill="#FFFFFF" cx="529" cy="223" r="8"></circle>
+                    <circle id="Oval-2" stroke="#ADE1E1" stroke-width="16" fill="#FFFFFF" cx="564" cy="118" r="16"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

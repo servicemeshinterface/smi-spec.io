@@ -3,22 +3,22 @@
 // ---------------------------------------
 
 $fa-font-path: "../fonts" !default;
-@import "../../../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "font-awesome/font-awesome.scss";
 @import "paper.scss";
-@import "../../../../node_modules/foundation-sites/scss/normalize.scss";
+@import "foundation/normalize.scss";
 //
 // foundation (all)
-// @import "../../../../node_modules/foundation-sites/scss/foundation.scss";
+// @import "foundation/foundation.scss";
 //
 // foundation (modular)
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/grid.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/block-grid.scss";
-// @import "../../../../node_modules/foundation-sites/scss/foundation/components/buttons.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/inline-lists.scss";
-// @import "../../../../node_modules/foundation-sites/scss/foundation/components/top-bar.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/type.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/offcanvas.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/visibility.scss";
+@import "foundation/foundation/components/grid.scss";
+@import "foundation/foundation/components/block-grid.scss";
+// @import "foundation/foundation/components/buttons.scss";
+@import "foundation/foundation/components/inline-lists.scss";
+// @import "foundation/foundation/components/top-bar.scss";
+@import "foundation/foundation/components/type.scss";
+@import "foundation/foundation/components/offcanvas.scss";
+@import "foundation/foundation/components/visibility.scss";
 
 
 // palette
@@ -182,7 +182,7 @@ body {
   overflow-x: hidden;
 }
 
-.off-canvas-wrap{  
+.off-canvas-wrap{
   height: 100%;
   overflow-y: auto;
 }
@@ -315,7 +315,7 @@ small {
   min-height: 10rem;
   position: relative;
   z-index: 1000;
-  background: #F6FCFC;;
+  background: #F6FCFC;
   
   h1 {
     margin: 0 0 0 -1.5vw;
@@ -796,6 +796,113 @@ article.post {
   }
 }
 
+// Blog
+// ---------------------------------------
+// listing
+
+.blog-wrapper {
+  .main {
+    padding-bottom: 8.5rem;
+
+    article.content-wrapper article {
+      padding: 3.5rem 0 3.5rem;
+      background-color: rgba(255,255,255,0.5);
+    }
+
+    .post-view {
+      width: 70vw;
+      min-width: 72.5rem;
+      background-color: rgba(255,255,255,0.5);
+      padding: 2rem 2vw;
+
+      .date {
+        color: $green;
+        font-size: 1.125vw;
+      }
+
+      p, ul {
+        max-width: 100%;
+        font-size: 1.35vw;
+      }
+    }
+
+    h1 {
+      color: $navy;
+      font-size: 2.25vw;
+      line-height: 1.4;
+      margin-bottom: 2vw;
+      
+      a {
+        color: $navy;
+        background: $yellowl;
+        padding: 1vw 1.2vw;
+        border-bottom: 3px solid $green;
+      }
+    }
+  }
+
+  &.blog-single {
+    .main {
+      h1 {
+        font-size: 4.25rem;
+      }
+    }
+
+    article.post .post-content {
+      padding-bottom: 1rem;
+    }
+
+    img {
+      margin: 1.5rem 0 4.5rem;
+      max-width: 100%;
+    }
+
+    code {
+      font-size: 1em;
+      border: none;
+      font-weight: normal;
+    }
+
+    p.author {
+      font-weight: bold;
+      padding-top: 2rem;
+      font-size: 1.5vw;
+      @include brandingBold;
+
+      a {
+        background: $yellowl;
+        color: $navy;
+      }
+    }
+  }
+}
+
+.pagination {
+  background: lighten($bluel, 7.5%);
+  margin-top: 3.5rem;
+  display: inline-block;
+  padding: 0.5vw 1.5vw;
+
+  span {
+    color: $green;
+  }
+
+  a {
+    color: $navy;
+  }
+
+  span, a {
+    padding: 1rem;
+    margin: 0 0.5vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    float: left;
+    line-height: 2;
+    border: none;
+    outline: none;
+  }
+}
+
 
 // Media Queries
 // ---------------------------------------
@@ -826,6 +933,12 @@ article.post {
     .small-12 {
       padding-left: 0 !important;
       padding-right: 0 !important; 
+    }
+  }
+
+  .header {
+    h1 {
+      margin-left: 2.5vw;
     }
   }
   
@@ -900,10 +1013,6 @@ article.post {
       margin: 3rem 0 0.825rem;
     }
 
-    .panel {
-
-    }
-    
     img {
       display: none;
     }
@@ -980,6 +1089,29 @@ article.post {
 
     .fa {
       margin: 0;
+    }
+  }
+
+  .blog-wrapper {
+
+    &.blog-single {
+      .main {
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .post-view {
+          width: 100%;
+          min-width: 100%;
+          
+          p,
+          ul,
+          code {
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 
