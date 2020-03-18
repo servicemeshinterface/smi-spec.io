@@ -9,7 +9,8 @@ node_modules/
 bower_components/
 static/*
 vendor/
-public/**/*
+public/
+resources/
 content/docs
 content/docs/**/*
 

@@ -3,22 +3,22 @@
 // ---------------------------------------
 
 $fa-font-path: "../fonts" !default;
-@import "../../../../node_modules/font-awesome/scss/font-awesome.scss";
+//@import "font-awesome/scss/font-awesome";
 @import "paper.scss";
-@import "../../../../node_modules/foundation-sites/scss/normalize.scss";
+// @import "foundation-sites/scss/normalize";
 //
 // foundation (all)
-// @import "../../../../node_modules/foundation-sites/scss/foundation.scss";
+// @import "foundation-sites/scss/foundation.scss";
 //
 // foundation (modular)
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/grid.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/block-grid.scss";
-// @import "../../../../node_modules/foundation-sites/scss/foundation/components/buttons.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/inline-lists.scss";
-// @import "../../../../node_modules/foundation-sites/scss/foundation/components/top-bar.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/type.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/offcanvas.scss";
-@import "../../../../node_modules/foundation-sites/scss/foundation/components/visibility.scss";
+@import "foundation-sites/scss/foundation/components/grid";
+@import "foundation-sites/scss/foundation/components/block-grid.scss";
+// @import "foundation-sites/scss/foundation/components/buttons.scss";
+@import "foundation-sites/scss/foundation/components/inline-lists.scss";
+// @import "foundation-sites/scss/foundation/components/top-bar.scss";
+@import "foundation-sites/scss/foundation/components/type.scss";
+@import "foundation-sites/scss/foundation/components/offcanvas.scss";
+@import "foundation-sites/scss/foundation/components/visibility.scss";
 
 
 // palette

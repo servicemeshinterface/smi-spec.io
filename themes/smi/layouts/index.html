@@ -1,129 +1,124 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+<div class="" id="intro">
+  <div class="row row-full">
+    <div class="small-12 large-offset-1 large-10 end columns  intro-wrap">
+      <h2>
+        A standard interface for service meshes on Kubernetes.
+      </h2>
 
-    <div class="" id="intro">
-      <div class="row row-full">
-        <div class="small-12 large-offset-1 large-10 end columns  intro-wrap">
-          <h2>
-            A standard interface for service meshes on Kubernetes.
-          </h2>
+      <img src="./img/logo.png" title="SMI logo" class="smi-logo" />
 
-          <img src="./img/logo.png" title="SMI logo" class="smi-logo" />
+      <div class="panel">
+        <div class="row panel-wrapper">
+          <div class="small-12 columns">
+            <h3>Service Mesh Interface provides:</h3>
 
-          <div class="panel">
-            <div class="row panel-wrapper">
-              <div class="small-12 columns">
-                <h3>Service Mesh Interface provides:</h3>
+            <ul>
+              <li>A standard interface for service meshes on Kubernetes</li>
+              <li>A basic feature set for the most common service mesh use cases</li>
+              <li>Flexibility to support new service mesh capabilities over time</li>
+              <li>Space for the ecosystem to innovate with service mesh technology</li>
+            </ul>
 
-                <ul>
-                  <li>A standard interface for service meshes on Kubernetes</li>
-                  <li>A basic feature set for the most common service mesh use cases</li>
-                  <li>Flexibility to support new service mesh capabilities over time</li>
-                  <li>Space for the ecosystem to innovate with service mesh technology</li>
-                </ul>
-
-                <a class="button primary" href="https://github.com/deislabs/smi-spec">View the Spec</a>
-              </div>
-            </div>
+            <a class="button primary" href="https://github.com/deislabs/smi-spec">View the Spec</a>
           </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row row-full" id="features">
+  <div class="small-12 large-10 large-centered columns">
+
+    <div class="row">
+      <div class="small-12 large-2 columns">&nbsp;</div>
+      <div class="small-12 large-7 columns end">
+        <div class="panel">
+          <h3>What SMI covers</h3>
+
+          <p>Service Mesh Interface is a specification that covers the most common service mesh capabilities:</p>
           
+          <ul>
+            <li>Traffic policy – apply policies like identity and transport encryption across services</li>
+            <li>Traffic telemetry – capture key metrics like error rate and latency between services</li>
+            <li>Traffic management – shift traffic between different services</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    
-
-    <div class="row row-full" id="features">
-      <div class="small-12 large-10 large-centered columns">
-
-        <div class="row">
-          <div class="small-12 large-2 columns">&nbsp;</div>
-          <div class="small-12 large-7 columns end">
-            <div class="panel">
-              <h3>What SMI covers</h3>
-    
-              <p>Service Mesh Interface is a specification that covers the most common service mesh capabilities:</p>
-              
-              <ul>
-                <li>Traffic policy – apply policies like identity and transport encryption across services</li>
-                <li>Traffic telemetry – capture key metrics like error rate and latency between services</li>
-                <li>Traffic management – shift traffic between different services</li>
-              </ul>
-            </div>
-          </div>
-            
-        </div>
         
-        <div class="row">
-          <div class="small-12 large-3 columns">&nbsp;</div>
-          <div class="small-12 large-7 columns end">
-            <div class="panel">
-                <h3>Kubernetes Native</h3>
-                <p>The SMI is specified as a collection of Kubernetes Custom Resource Definitions (CRD) and Extension API Servers. These APIs can be installed onto any Kubernetes cluster and manipulated using standard tools.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="small-12 large-4 columns">&nbsp;</div>
-          <div class="small-12 large-7 columns end">
-            <div class="panel">
-              <h3>Provider Agnostic</h3>
-              <p>The goal of the SMI API is to provide a common, portable set of service mesh APIs which a Kubernetes user can use in a provider agnostic manner. In this way people can define applications that use service mesh technology without tightly binding to any specific implementation.</p>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
     </div>
     
-
-    <div class="row row-full" id="credits">
-      <div class="small-12 large-10 large-centered columns">
-        <h3 class="text-center sep sep-sides">In partnership with:</h3>
-
-        <div class="text-center">
-          <a href="https://microsoft.com" target="_blank" title="Microsoft"><img src="../img/logo-azure.png" /></a>
-          <a href="https://linkerd.io" target="_blank" title="Linkerd"><img src="../img/logo-linkerd.png" /></a>
-          <a href="https://hashicorp.com" target="_blank" title="Hashicorp"><img src="../img/logo-hashicorp.png" /></a>
-          <a href="https://solo.io" target="_blank" title="Solo.io"><img src="../img/logo-soloio.png" /></a>
-          <a href="https://redhat.com/" target="_blank" title="Red Hat"><img src="../img/logo-redhat.png" /></a>
-          <a href="https://rancher.com/" target="_blank" title="Rancher"><img src="../img/logo-rancher.png" /></a>
-          <a href="https://docker.com/" target="_blank" title="Docker"><img src="../img/logo-docker.png" /></a>
-          <a href="https://layer5.io/" target="_blank" title="Layer5"><img src="../img/logo-layer5.png" /></a>
-          <a href="https://weave.works/" target="_blank" title="Weaveworks"><img src="../img/logo-weaveworks.png" /></a>
-
-          <a href="https://aspenmesh.io/" target="_blank" title="Aspen Mesh"><img src="../img/logo-aspenmesh.png" /></a>
-          <a href="https://pivotal.io/" target="_blank" title="Pivotal"><img src="../img/logo-pivotal.png" /></a>
-          <a href="https://vmware.com/" target="_blank" title="VMware"><img src="../img/logo-vmware.png" /></a>
-          <a href="https://kinvolk.io/" target="_blank" title="Kinvolk"><img src="../img/logo-kinvolk.png" /></a>
-          <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
-          <a href="https://canonical.com/" target="_blank" title="Canonical"><img src="../img/logo-canonical.png" /></a>
-          <a href="https://kubecost.com/" target="_blank" title="Kubecost"><img src="../img/logo-kubecost.png" /></a>
-          <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
+    <div class="row">
+      <div class="small-12 large-3 columns">&nbsp;</div>
+      <div class="small-12 large-7 columns end">
+        <div class="panel">
+            <h3>Kubernetes Native</h3>
+            <p>The SMI is specified as a collection of Kubernetes Custom Resource Definitions (CRD) and Extension API Servers. These APIs can be installed onto any Kubernetes cluster and manipulated using standard tools.</p>
         </div>
-        <br>
-        <div class="sep"></div>
       </div>
     </div>
 
-    <div class="row row-full" id="communications">
-      <div class="small-12 large-10 large-centered columns">
-        <h3 class="text-center">Communications:</h3>
-
-        <div class="small-12 large-10 large-centered columns">
-          <div class="panel">
-            <!-- <h4>Slack Channel</h4> -->
-            <div class="panel-wrapper small-12 large-8">
-              <p>Sign up for the <a href="http://smi-spec.slack.com/"><strong>SMI Slack</strong></a> for related discussion.</p>
-
-            <div class="panel-wrapper small-12 large-4">
-              <p><a href="https://aka.ms/smi/slack" class="button primary">SMI Slack</a></p>
-            </div>
-          </div>
+    <div class="row">
+      <div class="small-12 large-4 columns">&nbsp;</div>
+      <div class="small-12 large-7 columns end">
+        <div class="panel">
+          <h3>Provider Agnostic</h3>
+          <p>The goal of the SMI API is to provide a common, portable set of service mesh APIs which a Kubernetes user can use in a provider agnostic manner. In this way people can define applications that use service mesh technology without tightly binding to any specific implementation.</p>
         </div>
-
       </div>
     </div>
 
-{{ partial "footer.html" . }}
+    
+  </div>
+</div>
+
+<div class="row row-full" id="credits">
+  <div class="small-12 large-10 large-centered columns">
+    <h3 class="text-center sep sep-sides">In partnership with:</h3>
+
+    <div class="text-center">
+      <a href="https://microsoft.com" target="_blank" title="Microsoft"><img src="../img/logo-azure.png" /></a>
+      <a href="https://linkerd.io" target="_blank" title="Linkerd"><img src="../img/logo-linkerd.png" /></a>
+      <a href="https://hashicorp.com" target="_blank" title="Hashicorp"><img src="../img/logo-hashicorp.png" /></a>
+      <a href="https://solo.io" target="_blank" title="Solo.io"><img src="../img/logo-soloio.png" /></a>
+      <a href="https://redhat.com/" target="_blank" title="Red Hat"><img src="../img/logo-redhat.png" /></a>
+      <a href="https://rancher.com/" target="_blank" title="Rancher"><img src="../img/logo-rancher.png" /></a>
+      <a href="https://docker.com/" target="_blank" title="Docker"><img src="../img/logo-docker.png" /></a>
+      <a href="https://layer5.io/" target="_blank" title="Layer5"><img src="../img/logo-layer5.png" /></a>
+      <a href="https://weave.works/" target="_blank" title="Weaveworks"><img src="../img/logo-weaveworks.png" /></a>
+
+      <a href="https://aspenmesh.io/" target="_blank" title="Aspen Mesh"><img src="../img/logo-aspenmesh.png" /></a>
+      <a href="https://pivotal.io/" target="_blank" title="Pivotal"><img src="../img/logo-pivotal.png" /></a>
+      <a href="https://vmware.com/" target="_blank" title="VMware"><img src="../img/logo-vmware.png" /></a>
+      <a href="https://kinvolk.io/" target="_blank" title="Kinvolk"><img src="../img/logo-kinvolk.png" /></a>
+      <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
+      <a href="https://canonical.com/" target="_blank" title="Canonical"><img src="../img/logo-canonical.png" /></a>
+      <a href="https://kubecost.com/" target="_blank" title="Kubecost"><img src="../img/logo-kubecost.png" /></a>
+      <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
+    </div>
+    <br>
+    <div class="sep"></div>
+  </div>
+</div>
+
+<div class="row row-full" id="communications">
+  <div class="small-12 large-10 large-centered columns">
+    <h3 class="text-center">Communications:</h3>
+
+    <div class="small-12 large-10 large-centered columns">
+      <div class="panel">
+        <!-- <h4>Slack Channel</h4> -->
+        <div class="panel-wrapper small-12 large-8">
+          <p>Sign up for the <a href="http://smi-spec.slack.com/"><strong>SMI Slack</strong></a> for related discussion.</p>
+
+        <div class="panel-wrapper small-12 large-4">
+          <p><a href="https://aka.ms/smi/slack" class="button primary">SMI Slack</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ end }}

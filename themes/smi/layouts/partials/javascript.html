@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  addMenuListener();
+  function addMenuListener() {
+    var $toggle = document.querySelector('.menu-toggle');
+    var $body = document.querySelector('body');
+    $toggle.addEventListener('click', function() {
+      $body.classList.toggle('noscroll');
+    }, false);
+  }
+</script>

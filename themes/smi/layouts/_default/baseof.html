@@ -1,3 +1,4 @@
+{{ $bodyClass := cond (eq .Kind "page") "single" (cond .IsHome "list home" "list") }}
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
   <head>
@@ -10,13 +11,17 @@
     {{ hugo.Generator }}
 
     {{ partial "rss.html" . }}
-  
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}/index.xml" title="{{ .Site.Title }}">
-    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      {{ template "_internal/google_analytics_async.html" . }}
-    {{ end }}
-  
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu:400,500&display=swap" rel="stylesheet">
   </head>
+
+  <body class="{{ $bodyClass }}">
+    {{ partial "header.html" . }}
+
+    <main class="main height-full">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "javascript.html" . }}
+  </body>
 </html>
