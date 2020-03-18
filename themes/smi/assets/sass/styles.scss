@@ -816,8 +816,9 @@ article.post {
       padding: 2rem 2vw;
 
       .date {
-        color: $green;
+        color: #999;
         font-size: 1.125vw;
+        font-family: monospace;
       }
 
       p, ul {
@@ -830,13 +831,12 @@ article.post {
       color: $navy;
       font-size: 2.25vw;
       line-height: 1.4;
-      margin-bottom: 2vw;
+      margin-bottom: 1.5vw;
       
       a {
         color: $navy;
-        background: $yellowl;
-        padding: 1vw 1.2vw;
-        border-bottom: 3px solid $green;
+        padding: 0.5vw 0;
+        border-bottom: 3px solid $bluel;
       }
     }
   }
