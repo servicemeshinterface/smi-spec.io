@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    {{ partial "css.html" . }}
+    {{ partial "icons.html" . }}
+    {{ partial "google-tag-manager.html" . }}
+  
+    {{/* Site generator */}}
+    {{ hugo.Generator }}
+
+    {{ partial "rss.html" . }}
+  
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}/index.xml" title="{{ .Site.Title }}">
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+  
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu:400,500&display=swap" rel="stylesheet">
+  </head>
+</html>

@@ -1,0 +1,3 @@
+{{ $rss   := .OutputFormats.Get "rss" }}
+{{ $title := site.Title }}
+<link rel="{{ $rss.Rel }}" type="{{ $rss.MediaType.Type }}" href="{{ $rss.Permalink }}" title="{{ $title }}" />
