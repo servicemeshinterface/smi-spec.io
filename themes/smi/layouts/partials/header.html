@@ -27,7 +27,8 @@
    <meta name="twitter:image:alt" content="SMI: Service Mesh Interface.">
 
   <!-- Styles -->
-  <link href="../css/styles.min.css" rel="stylesheet">
+  {{ $style := resources.Get "sass/styles.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 
   <!-- Icons -->
   <link rel="icon" type="image/png" href="img/favicon.png">

@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+
+<div class="blog blog-wrapper blog-single height-full">
+  <div class="row row-full">
+
+    <div class="small-12 small-centered large-10 main height-full columns">
+      <article class="post post-view">
+
+        <h1>{{ .Title }}</h1>
+        <p class="date">{{ .Date.Format "Jan 02, 2006" }}</p>
+        
+        <div class="post-content">{{ .Content }}</div>
+
+        <hr />
+
+        <p class="author"><a href="{{ .Params.authorlink }}" target="_blank">{{ .Params.authorname }}<br> <small>{{ .Params.author }}</a></small></p>
+      </article>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  
+  var affixMenu = document.querySelector(".sidebar");
+
+  window.onscroll = function() {
+    if (window.pageYOffset > 140) {
+      affixMenu.classList.add("fixed");
+    } else {
+      affixMenu.classList.remove("fixed");
+    };
+  }
+</script>
+
+{{ partial "footer.html" . }}
