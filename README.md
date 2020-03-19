@@ -25,3 +25,7 @@ gulp && hugo serve
 ```
 
 `hugo serve` will run the site locally at [localhost:1313](http://localhost:1313/)
+
+# Code of Conduct
+
+Service Mesh Interface follows the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
