@@ -56,3 +56,10 @@ hugo serve
 The site auto deploys the master branch via [Netlify](https://app.netlify.com/sites/smi-spec). Once pull requests are merged the changes will appear at smi-spec.io after a couple of minutes. Check the [logs](https://app.netlify.com/sites/smi-spec/deploys) for details.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8ffabb30-f2f4-45cc-b0fa-1b4adda00b5e/deploy-status)](https://app.netlify.com/sites/helm-merge/deploys)
+
+`hugo serve` will run the site locally at [localhost:1313](http://localhost:1313/)
+
+# Code of Conduct
+
+Service Mesh Interface follows the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
+
