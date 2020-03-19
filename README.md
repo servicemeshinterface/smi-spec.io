@@ -1,6 +1,6 @@
 ![smi-github](https://user-images.githubusercontent.com/686194/57564913-f8d4cf00-7368-11e9-879f-588440bc4cb5.png)
 
-A simple website for the [SMI](https://github.com/deislabs/smi-spec) specification - [smi-spec.io](https://smi-spec.io)
+A simple website for the [SMI](https://github.com/servicemeshinterface/smi-spec) specification - [smi-spec.io](https://smi-spec.io)
 
 # Editing Content
 
@@ -32,7 +32,7 @@ To summarize the content on the blog index page, insert a <!--more--> break in y
 ## Notes
 
 * built with the [Hugo](https://gohugo.io/) static site generator
-* custom smi theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/deislabs/smi-spec.io/tree/master/themes/smi)
+* custom smi theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/servicemeshinterface/smi-spec.io/tree/master/themes/smi)
 * deployed to [Netlify](https://app.netlify.com/sites/smi-spec/deploys) via merges to master. (@flynnduism, @lachie83 and @bridgetkromhout are admins)
 * metrics tracked via Google Analytics
 
