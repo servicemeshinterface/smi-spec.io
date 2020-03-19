@@ -1,0 +1,73 @@
+{{ partial "header.html" . }}
+
+<div class="blog blog-wrapper height-full">
+  <div class="row row-full">
+
+    <div class="small-12 small-centered large-10 main height-full columns">
+      <article class="post post-view">
+        
+        <div class="post-content">
+          <article class="content-wrapper">
+            {{ .Content }}
+    
+            {{ range (.Paginator 5).Pages }}
+            {{ $paginator := .Paginate (where .Pages "Type" "posts") 5 }}
+            <article>
+              <header>
+                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                <p class="date">{{ .Date.Format "Jan 02, 2006" }}</p>
+              </header>
+              
+              <p>
+                {{ .Summary }}
+                {{ if .Truncated }}
+                  <a href="{{ .RelPermalink }}">Read More…</a>
+                {{ end }}
+              </p>
+            </article>
+            
+            {{ end }}
+            
+            <div class="pagination">
+              {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}" class="left arrow">&#8592; Newer posts</a>
+              {{ end }}
+              
+              <span>Page {{ .Paginator.PageNumber }}</span>
+
+              {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}" class="right arrow">Older posts &#8594;</a>
+              {{ end }}
+            </div>
+          </article>
+        </div>
+        
+        <footer class="post-footer">
+          {{ if .Params.tags }}
+          <ul class="post-tags">
+            {{ range .Params.tags }}
+            <li><a href="{{.Site.BaseURL}}/tags/{{ . | urlize }}/">{{ . }}</a></li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </footer>
+      </article>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  
+  var affixMenu = document.querySelector(".sidebar");
+
+  window.onscroll = function() {
+    if (window.pageYOffset > 140) {
+      affixMenu.classList.add("fixed");
+    } else {
+      affixMenu.classList.remove("fixed");
+    };
+  }
+</script>
+
+{{ partial "footer.html" . }}
