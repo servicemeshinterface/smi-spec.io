@@ -1,5 +1,14 @@
 {
-  "dependencies": {
+  "name": "smi-spec.io",
+  "version": "1.0.0",
+  "description": "site for service mesh interface",
+  "author": "servicemeshinterface",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/servicemeshinterface/smi-spec.io.git"
+  },
+  "devDependencies": {
     "autoprefixer": "^9.7.4",
     "font-awesome": "^4.7.0",
     "foundation-sites": "~5.5.3",

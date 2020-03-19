@@ -22,5 +22,8 @@ command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
 [context.branch-deploy]
 command = "hugo -b $DEPLOY_PRIME_URL"
 
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
