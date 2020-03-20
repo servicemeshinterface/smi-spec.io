@@ -3,29 +3,28 @@
 // ---------------------------------------
 
 $fa-font-path: "../fonts" !default;
-
-@import "font-awesome/scss/font-awesome";
+@import "font-awesome/font-awesome.scss";
 @import "paper.scss";
-// @import "foundation-sites/scss/normalize";
+@import "foundation/normalize.scss";
 //
 // foundation (all)
-// @import "foundation-sites/scss/foundation.scss";
+// @import "foundation/foundation.scss";
 //
 // foundation (modular)
-@import "foundation-sites/scss/foundation/components/grid";
-@import "foundation-sites/scss/foundation/components/block-grid.scss";
-// @import "foundation-sites/scss/foundation/components/buttons.scss";
-@import "foundation-sites/scss/foundation/components/inline-lists.scss";
-// @import "foundation-sites/scss/foundation/components/top-bar.scss";
-@import "foundation-sites/scss/foundation/components/type.scss";
-@import "foundation-sites/scss/foundation/components/offcanvas.scss";
-@import "foundation-sites/scss/foundation/components/visibility.scss";
+@import "foundation/foundation/components/grid.scss";
+@import "foundation/foundation/components/block-grid.scss";
+// @import "foundation/foundation/components/buttons.scss";
+@import "foundation/foundation/components/inline-lists.scss";
+// @import "foundation/foundation/components/top-bar.scss";
+@import "foundation/foundation/components/type.scss";
+@import "foundation/foundation/components/offcanvas.scss";
+@import "foundation/foundation/components/visibility.scss";
 
 
 // palette
 // ---------------------------------------
 // core colors
-$navy: #2136D5;
+$navy:  #2136D5;
 $red: #E83683;
 $green: #2EC4B6;
 $yellow: #CCFF66;

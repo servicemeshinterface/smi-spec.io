@@ -3,6 +3,7 @@
 _site/*
 _site/
 public/
+resources/
 .ncurc.yml
 .publish/*
 node_modules/

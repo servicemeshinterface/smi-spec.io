@@ -10,8 +10,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "font-awesome": "^4.7.0",
-    "foundation-sites": "~5.5.3",
     "postcss-cli": "^7.1.0"
   }
 }
