@@ -20,14 +20,15 @@
               <li>Space for the ecosystem to innovate with service mesh technology</li>
             </ul>
 
-            <a class="button primary" href="https://github.com/deislabs/smi-spec">View the Spec</a>
+            <a class="button primary" href="https://github.com/servicemeshinterface/smi-spec">View the Spec</a>
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </div>
+
 
 <div class="row row-full" id="features">
   <div class="small-12 large-10 large-centered columns">
@@ -39,7 +40,6 @@
           <h3>What SMI covers</h3>
 
           <p>Service Mesh Interface is a specification that covers the most common service mesh capabilities:</p>
-          
           <ul>
             <li>Traffic policy – apply policies like identity and transport encryption across services</li>
             <li>Traffic telemetry – capture key metrics like error rate and latency between services</li>
@@ -47,15 +47,15 @@
           </ul>
         </div>
       </div>
-        
+
     </div>
-    
+
     <div class="row">
       <div class="small-12 large-3 columns">&nbsp;</div>
       <div class="small-12 large-7 columns end">
         <div class="panel">
-            <h3>Kubernetes Native</h3>
-            <p>The SMI is specified as a collection of Kubernetes Custom Resource Definitions (CRD) and Extension API Servers. These APIs can be installed onto any Kubernetes cluster and manipulated using standard tools.</p>
+          <h3>Kubernetes Native</h3>
+          <p>The SMI is specified as a collection of Kubernetes Custom Resource Definitions (CRD) and Extension API Servers. These APIs can be installed onto any Kubernetes cluster and manipulated using standard tools.</p>
         </div>
       </div>
     </div>
@@ -70,13 +70,28 @@
       </div>
     </div>
 
-    
   </div>
 </div>
 
 <div class="row row-full" id="credits">
   <div class="small-12 large-10 large-centered columns">
-    <h3 class="text-center sep sep-sides">In partnership with:</h3>
+    <h3 class="text-center sep sep-sides" id="ecosystem">Ecosystem</h3>
+
+    <div class="text-center">
+      <a href="https://consul.io/docs/connect" target="_blank" title="Consul Connect">Consul Connect</a>
+      <a href="https://flagger.app" target="_blank" title="Flagger"><img src="../img/logo-flagger.png" /></a>
+      <a href="https://github.com/deislabs/smi-adapter-istio" target="_blank" title="Istio">Istio</a>
+      <a href="https://linkerd.io" target="_blank" title="Linkerd"><img src="../img/logo-linkerd.png" /></a>
+      <a href="https://mae.sh" target="_blank" title="Maesh" style="padding-right: 1em;">Maesh</a>
+      <a href="https://meshery.io/" target="_blank" title="Meshery"><img src="../img/logo-meshery.png" /></a>
+      <a href="https://rio.io" target="_blank" title="Rio" style="padding-right: 1em;">Rio</a>
+      <a href="https://solo.io/products/service-mesh-hub" target="_blank" title="Service Mesh Hub"><img src="../img/logo-service-mesh-hub.png" /></a>
+    </div>
+    <br />
+  </div>
+
+  <div class="small-12 large-10 large-centered columns">
+    <h3 class="text-center sep sep-sides">In partnership with</h3>
 
     <div class="text-center">
       <a href="https://microsoft.com" target="_blank" title="Microsoft"><img src="../img/logo-azure.png" /></a>
@@ -106,25 +121,18 @@
 <div class="row row-full" id="communications">
   <div class="small-12 large-10 large-centered columns">
     <h3 class="text-center">Communications:</h3>
-
-    <div class="row row-full" id="communications">
       <div class="small-12 large-10 large-centered columns">
-        <h3 class="text-center">Communications:</h3>
+        <div class="panel">
+          <!-- <h4>Slack Channel</h4> -->
+          <div class="panel-wrapper small-12 large-8">
+            <p>Sign up for the <a href="http://cloud-native.slack.com/"><strong>CNCF Slack</strong></a> for related discussion.</p>
 
-        <div class="small-12 large-10 large-centered columns">
-          <div class="panel">
-            <!-- <h4>Slack Channel</h4> -->
-            <div class="panel-wrapper small-12 large-8">
-              <p>Sign up for the <a href="http://cloud-native.slack.com/"><strong>CNCF Slack</strong></a> for related discussion.</p>
-
-            <div class="panel-wrapper small-12 large-8">
-              <p><a href="https://cloud-native.slack.com/messages/smi" class="button primary">CNCF Slack, #smi</a></p>
-            </div>
+          <div class="panel-wrapper small-12 large-8">
+            <p><a href="https://cloud-native.slack.com/messages/smi" class="button primary">CNCF Slack, #smi</a></p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 {{ end }}
