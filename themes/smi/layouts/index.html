@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ $home      := site.Data.home }}
+{{ $ecosystem := $home.ecosystem }}
+{{ $partners  := $home.partners }}
 <div class="" id="intro">
   <div class="row row-full">
     <div class="small-12 large-offset-1 large-10 end columns  intro-wrap">
@@ -6,7 +9,7 @@
         A standard interface for service meshes on Kubernetes.
       </h2>
 
-      <img src="./img/logo.png" title="SMI logo" class="smi-logo" />
+      <img src="./img/logos/smi-background-logo.png" title="SMI logo" class="smi-logo" />
 
       <div class="panel">
         <div class="row panel-wrapper">
@@ -78,15 +81,18 @@
     <h3 class="text-center sep sep-sides" id="ecosystem">Ecosystem</h3>
 
     <div class="text-center">
-      <a href="https://consul.io/docs/connect" target="_blank" title="Consul Connect">Consul Connect</a>
-      <a href="https://flagger.app" target="_blank" title="Flagger"><img src="../img/logo-flagger.png" /></a>
-      <a href="https://github.com/deislabs/smi-adapter-istio" target="_blank" title="Istio">Istio</a>
-      <a href="https://linkerd.io" target="_blank" title="Linkerd"><img src="../img/logo-linkerd.png" /></a>
-      <a href="https://mae.sh" target="_blank" title="Maesh" style="padding-right: 1em;">Maesh</a>
-      <a href="https://meshery.io/" target="_blank" title="Meshery"><img src="../img/logo-meshery.png" /></a>
-      <a href="https://rio.io" target="_blank" title="Rio" style="padding-right: 1em;">Rio</a>
-      <a href="https://solo.io/products/service-mesh-hub" target="_blank" title="Service Mesh Hub"><img src="../img/logo-service-mesh-hub.png" /></a>
+      {{ range $ecosystem }}
+      <a href="{{ .url }}" target="_blank"{{ if not .logo }} style="padding-right: 1em;"{{ end }}>
+        {{ if .logo }}
+        {{ $src := printf "img/logos/%s" .logo | relURL }}
+        <img src="{{ $src }}" title="{{ .title }}" alt="{{ .title }} logo" />
+        {{ else }}
+        {{ .title }}
+        {{ end }}
+      </a>
+      {{ end }}
     </div>
+
     <br />
   </div>
 
@@ -94,24 +100,12 @@
     <h3 class="text-center sep sep-sides">In partnership with</h3>
 
     <div class="text-center">
-      <a href="https://microsoft.com" target="_blank" title="Microsoft"><img src="../img/logo-azure.png" /></a>
-      <a href="https://linkerd.io" target="_blank" title="Linkerd"><img src="../img/logo-linkerd.png" /></a>
-      <a href="https://hashicorp.com" target="_blank" title="Hashicorp"><img src="../img/logo-hashicorp.png" /></a>
-      <a href="https://solo.io" target="_blank" title="Solo.io"><img src="../img/logo-soloio.png" /></a>
-      <a href="https://redhat.com/" target="_blank" title="Red Hat"><img src="../img/logo-redhat.png" /></a>
-      <a href="https://rancher.com/" target="_blank" title="Rancher"><img src="../img/logo-rancher.png" /></a>
-      <a href="https://docker.com/" target="_blank" title="Docker"><img src="../img/logo-docker.png" /></a>
-      <a href="https://layer5.io/" target="_blank" title="Layer5"><img src="../img/logo-layer5.png" /></a>
-      <a href="https://weave.works/" target="_blank" title="Weaveworks"><img src="../img/logo-weaveworks.png" /></a>
-
-      <a href="https://aspenmesh.io/" target="_blank" title="Aspen Mesh"><img src="../img/logo-aspenmesh.png" /></a>
-      <a href="https://pivotal.io/" target="_blank" title="Pivotal"><img src="../img/logo-pivotal.png" /></a>
-      <a href="https://vmware.com/" target="_blank" title="VMware"><img src="../img/logo-vmware.png" /></a>
-      <a href="https://kinvolk.io/" target="_blank" title="Kinvolk"><img src="../img/logo-kinvolk.png" /></a>
-      <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
-      <a href="https://canonical.com/" target="_blank" title="Canonical"><img src="../img/logo-canonical.png" /></a>
-      <a href="https://kubecost.com/" target="_blank" title="Kubecost"><img src="../img/logo-kubecost.png" /></a>
-      <!-- <div class="partner hide-for-small-only">&nbsp;</div> -->
+      {{ range $partners }}
+      {{ $src := printf "img/logos/%s" .logo | relURL }}
+      <a href="{{ .url }}" target="_blank" title="{{ .title }}">
+        <img src="{{ $src }}" alt="{{ .title }} logo" />
+      </a>
+      {{ end }}
     </div>
     <br>
     <div class="sep"></div>
