@@ -1,16 +1,14 @@
-<footer class="row row-full" id="footer">
-  <div class="show-for-large-up large-1 columns">&nbsp;</div>
-  <div class="small-9 large-8 columns">
-    <div class="deislabs">
-      <a href="https://github.com/deislabs/">
-        <span>Deis Labs</span>
-        <em class="dl-tr"></em><em class="dl-sq"></em><em class="dl-ci"></em>
-      </a>
+{{ $year := now.Year }}
+<div class="row row-full" id="footer">
+  <div class="small-12 large-10 large-centered columns">
+    <div class="small-12 large-10">
+      <p>
+        &copy; Service Mesh Interface Authors {{ $year }} | Documentation Distributed under <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC-BY-4.0</a>.
+      </p>
+  
+      <p>
+        &copy; {{ $year }} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">Trademark Usage</a> page.
+      </p>
     </div>
-    <p class="show-for-large-up">:  Open Source from Microsoft Azure.</p>&nbsp;
   </div>
-  <div class="small-3 large-2 columns">
-    <p><a href="https://github.com/servicemeshinterface/smi-spec" target="_blank" class="right"><i class="fa fa-github" aria-hidden="true"></i></a></p>
-  </div>
-  <div class="show-for-large-up large-1 columns">&nbsp;</div>
-</footer>
+</div>
