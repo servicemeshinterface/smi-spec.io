@@ -1,5 +1,8 @@
 baseURL = "https://smi-spec.io"
-title = "SMI - Service Mesh Interface"
+title = "SMI"
 theme = "smi"
 languageCode = "en-us"
-buildDrafts =  "false"
+
+[params]
+description = "A standard interface for service meshes on Kubernetes"
+twitter = "SMI_spec"

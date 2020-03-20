@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 {{ if not .IsHome }}
 <header class="list-header">
   {{ if eq .Data.Singular "tag" }}<span>Tagged in</span>
@@ -41,4 +41,4 @@
   </nav>
 </footer>
 {{ end }}
-{{ partial "footer.html" . }}
+{{ end }}

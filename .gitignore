@@ -3,13 +3,14 @@
 _site/*
 _site/
 public/
+resources/
 .ncurc.yml
 .publish/*
 node_modules/
 bower_components/
 static/*
 vendor/
-public/**/*
+public/
 content/docs
 content/docs/**/*
 

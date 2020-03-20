@@ -1,18 +1,16 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+<div class="" id="intro">
+  <div class="row row-full">
+    <div class="small-12 large-offset-2 large-8 end columns">
+      <h2>
+        <strong>404</strong>
+      </h2>
 
-    <div class="" id="intro">
-      <div class="row row-full">
-        <div class="small-12 large-offset-2 large-8 end columns">
-          <h2>
-            <strong>404</strong>
-          </h2>
-
-          <div class="text-center">
-            <a class="button primary" href="https://github.com/servicemeshinterface/smi-spec">View the spec</a>
-          </div>
-          
-        </div>
+      <div class="text-center">
+        <a class="button primary" href="https://github.com/servicemeshinterface/smi-spec">View the spec</a>
       </div>
-    </div>    
-
-{{ partial "footer.html" . }}
+      
+    </div>
+  </div>
+</div>    
+{{ end }}

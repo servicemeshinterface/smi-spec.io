@@ -1,0 +1,27 @@
+{{ $bodyClass := cond (eq .Kind "page") "single" (cond .IsHome "list home" "list") }}
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    {{ partial "css.html" . }}
+    {{ partial "icons.html" . }}
+    {{ partial "google-tag-manager.html" . }}
+  
+    {{/* Site generator */}}
+    {{ hugo.Generator }}
+
+    {{ partial "rss.html" . }}
+  </head>
+
+  <body class="{{ $bodyClass }}">
+    {{ partial "header.html" . }}
+
+    <main class="main height-full">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "javascript.html" . }}
+  </body>
+</html>

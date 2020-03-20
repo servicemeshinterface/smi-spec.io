@@ -9,13 +9,7 @@
     "url": "git+https://github.com/servicemeshinterface/smi-spec.io.git"
   },
   "devDependencies": {
-    "autoprefixer": "9.7.4",
-    "postcss-cli": "7.1.0"
-  },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead"
-  ]
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  }
 }

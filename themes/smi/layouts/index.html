@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="" id="intro">
   <div class="row row-full">
     <div class="small-12 large-offset-1 large-10 end columns  intro-wrap">
@@ -41,7 +40,6 @@
           <h3>What SMI covers</h3>
 
           <p>Service Mesh Interface is a specification that covers the most common service mesh capabilities:</p>
-
           <ul>
             <li>Traffic policy – apply policies like identity and transport encryption across services</li>
             <li>Traffic telemetry – capture key metrics like error rate and latency between services</li>
@@ -123,21 +121,18 @@
 <div class="row row-full" id="communications">
   <div class="small-12 large-10 large-centered columns">
     <h3 class="text-center">Communications:</h3>
+      <div class="small-12 large-10 large-centered columns">
+        <div class="panel">
+          <!-- <h4>Slack Channel</h4> -->
+          <div class="panel-wrapper small-12 large-8">
+            <p>Sign up for the <a href="http://cloud-native.slack.com/"><strong>CNCF Slack</strong></a> for related discussion.</p>
 
-        <div class="small-12 large-10 large-centered columns">
-          <div class="panel">
-            <!-- <h4>Slack Channel</h4> -->
-            <div class="panel-wrapper small-12 large-8">
-              <p>Sign up for the <a href="http://cloud-native.slack.com/"><strong>CNCF Slack</strong></a> for related discussion.</p>
-
-            <div class="panel-wrapper small-12 large-8">
-              <p><a href="https://cloud-native.slack.com/messages/smi" class="button primary">CNCF Slack, #smi</a></p>
-            </div>
+          <div class="panel-wrapper small-12 large-8">
+            <p><a href="https://cloud-native.slack.com/messages/smi" class="button primary">CNCF Slack, #smi</a></p>
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
-  {{ partial "footer.html" . }}
+</div>
+{{ end }}
