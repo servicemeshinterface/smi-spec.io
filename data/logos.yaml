@@ -11,6 +11,7 @@ ecosystem:
   logo: logo-linkerd.png
 - title: Maesh
   url: https://mae.sh
+  logo: logo-maesh.png
 - title: Meshery
   url: https://meshery.io
   logo: logo-meshery.png
