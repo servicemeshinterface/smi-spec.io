@@ -1,7 +1,9 @@
 {{ define "main" }}
-{{ $home      := site.Data.home }}
-{{ $ecosystem := $home.ecosystem }}
-{{ $partners  := $home.partners }}
+{{ $home         := site.Data.home }}
+{{ $ecosystem    := $home.ecosystem }}
+{{ $partners     := $home.partners }}
+{{ $features     := site.Params.features }}
+{{ $capabilities := site.Params.capabilities }}
 <div class="" id="intro">
   <div class="row row-full">
     <div class="small-12 large-offset-1 large-10 end columns  intro-wrap">
@@ -17,10 +19,11 @@
             <h3>Service Mesh Interface provides:</h3>
 
             <ul>
-              <li>A standard interface for service meshes on Kubernetes</li>
-              <li>A basic feature set for the most common service mesh use cases</li>
-              <li>Flexibility to support new service mesh capabilities over time</li>
-              <li>Space for the ecosystem to innovate with service mesh technology</li>
+              {{ range $features }}
+              <li>
+                {{ . }}
+              </li>
+              {{ end }}
             </ul>
 
             <a class="button primary" href="https://github.com/servicemeshinterface/smi-spec">View the Spec</a>
@@ -44,9 +47,11 @@
 
           <p>Service Mesh Interface is a specification that covers the most common service mesh capabilities:</p>
           <ul>
-            <li>Traffic policy – apply policies like identity and transport encryption across services</li>
-            <li>Traffic telemetry – capture key metrics like error rate and latency between services</li>
-            <li>Traffic management – shift traffic between different services</li>
+            {{ range $capabilities }}
+            <li>
+              {{ . }}
+            </li>
+            {{ end }}
           </ul>
         </div>
       </div>

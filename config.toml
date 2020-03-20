@@ -6,3 +6,15 @@ languageCode = "en-us"
 [params]
 description = "A standard interface for service meshes on Kubernetes"
 twitter = "SMI_spec"
+features = [
+    "A standard interface for service meshes on Kubernetes",
+    "A basic feature set for the most common service mesh use cases",
+    "Flexibility to support new service mesh capabilities over time",
+    "Space for the ecosystem to innovate with service mesh technology",
+]
+
+capabilities = [
+    "Traffic policy – apply policies like identity and transport encryption across services",
+    "Traffic telemetry – capture key metrics like error rate and latency between services",
+    "Traffic management – shift traffic between different services",
+]
