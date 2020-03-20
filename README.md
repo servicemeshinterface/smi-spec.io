@@ -26,6 +26,12 @@ Add the content below the ``---`` as Markdown. The title does not need to be inc
 
 To summarize the content on the blog index page, insert a <!--more--> break in your markdown. This will truncate the content with a Read More link.
 
+## How to Add Your Logo
+
+To add the logo of your company or organization to the landing page:
+
+1. Add your logo to the [`themes/smi/static/img/logos`](themes/smi/static/img/logos) directory and name it `logo-*.png` where `*` is a slug for your org name (e.g. `logo-acme.png`).
+1. Add an entry to either the `ecosystem` or `partners` list in [`data/logos.yaml`](data/logos.yaml). Include the following information: an org title, a website URL, and the filename of the logo.
 
 # Site Development
 
