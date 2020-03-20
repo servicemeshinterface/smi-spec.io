@@ -10,7 +10,6 @@ bower_components/
 static/*
 vendor/
 public/
-resources/
 content/docs
 content/docs/**/*
 
