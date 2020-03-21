@@ -17,6 +17,7 @@ ecosystem:
   logo: logo-meshery.png
 - title: Rio
   url: https://rio.io
+  logo: logo-rio.png
 - title: Service Mesh Hub
   url: https://solo.io/products/service-mesh-hub
   logo: logo-service-mesh-hub.png
