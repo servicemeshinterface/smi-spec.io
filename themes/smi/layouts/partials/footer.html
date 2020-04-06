@@ -1,14 +1,16 @@
 {{ $year := now.Year }}
 <div class="row row-full" id="footer">
   <div class="small-12 large-10 large-centered columns">
-    <div class="small-12 large-10">
-      <p>
-        &copy; Service Mesh Interface Authors {{ $year }} | Documentation Distributed under <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC-BY-4.0</a>.
-      </p>
-  
-      <p>
-        &copy; {{ $year }} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">Trademark Usage</a> page.
-      </p>
-    </div>
+    <p class="footer-cncf">Service Mesh Interface is a <a href="https://cncf.io">Cloud Native Computing Foundation</a> sandbox project.</p>
+
+    <a href="https://cncf.io">
+      <img class="logo-cncf" src="/img/logos/cncf-color.svg" alt="Cloud Native Compute Foundation" />
+    </a>
+  </div>
+
+  <div class="small-12 large-10 large-offset-1 end columns">
+    <p class="footer-legal">
+      &copy; Service Mesh Interface Authors {{ $year }} | Documentation Distributed under <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC-BY-4.0</a>. &copy; {{ $year }} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">Trademark Usage</a> page.
+    </p>
   </div>
 </div>
