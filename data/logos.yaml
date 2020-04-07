@@ -1,6 +1,7 @@
 ecosystem:
 - title: Consul Connect
   url: https://consul.io/docs/connect
+  logo: logo-consul.png
 - title: Flagger
   url: https://flagger.app
   logo: logo-flagger.png
