@@ -766,10 +766,9 @@ article.post {
     }
 
     .post-view {
-      width: 70vw;
-      min-width: 72.5rem;
+      min-width: 75vw;
       background-color: rgba(255,255,255,0.5);
-      padding: 2rem 2vw;
+      padding: 2rem 5vw;
 
       .date {
         color: #999;
@@ -778,21 +777,42 @@ article.post {
       }
 
       p, ul {
-        max-width: 100%;
+        width: 100%;
+        max-width: 65vw;
         font-size: 1.35vw;
+        margin: 2.25vw 0;
+      }
+
+      p {
+        padding-right: 7.5%;
+      }
+
+      a {
+        border-bottom-color: lighten($bluel, 5%);
+
+        &:hover {
+          border-bottom-color: $bluel;
+        }
+
+        &.read-more {
+          background-color: lighten($bluel, 5%);
+          padding: 0.5rem 1rem;
+        }
       }
     }
 
     h1 {
       color: $navy;
-      font-size: 2.25vw;
+      font-size: 2.5vw;
       line-height: 1.4;
       margin-bottom: 1.5vw;
+      max-width: 65vw;
+      padding-right: 7.5%;
       
       a {
         color: $navy;
         padding: 0.5vw 0;
-        border-bottom: 3px solid $bluel;
+        border-bottom: 3px solid lighten($bluel, 12.5%);
       }
     }
   }
@@ -800,7 +820,8 @@ article.post {
   &.blog-single {
     .main {
       h1 {
-        font-size: 4.25rem;
+        font-size: 3.5rem;
+        padding-right: 7.5%;
       }
     }
 
@@ -1040,8 +1061,12 @@ article.post {
         }
 
         .post-view {
-          width: 100%;
           min-width: 100%;
+          padding: 2rem 0 !important;
+
+          p {
+            max-width: 100%;
+          }
           
           p,
           ul,
