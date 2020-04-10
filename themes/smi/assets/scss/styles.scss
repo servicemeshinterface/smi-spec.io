@@ -687,16 +687,16 @@ body.list.noscroll {
     margin: 2.5rem 0;
     font-size: 1.25vw;
     padding: 0;
+    position: relative;
     max-width: 80vw;
 
     a {
       font-weight: bold;
-      @include ripple;
     }
 
     &.footer-cncf {
       margin: 3.5rem 0;
-      font-size: 1.5vw;
+      font-size: 1.4vw;
       font-weight: bold;
     }
 
@@ -712,10 +712,8 @@ body.list.noscroll {
   }
 
   img.logo-cncf {
-    max-height: 4vw;
-    position: absolute;
-    right: 0;
-    top: -0.75rem;
+    width: 100%;
+    margin-top: 2.5rem;
   }
 
   .fa {
@@ -1012,8 +1010,10 @@ article.post {
       padding: 0;
       
       &.footer-cncf {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-top: 3.75rem;
+        text-align: center;
+        margin: 1rem auto;
       }
 
       &.footer-legal {
@@ -1023,10 +1023,6 @@ article.post {
 
     img.logo-cncf {
       max-height: 3rem;
-      position: absolute;
-      right: auto;
-      top: 2rem;
-      left: 2.5%;
     }
 
     .fa {
