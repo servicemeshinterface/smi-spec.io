@@ -4,7 +4,7 @@ slug: "smi-joins-cncf"
 authorname: "Michelle Noorali & Bridget Kromhout"
 author: "@SMI_spec"
 authorlink: "https://twitter.com/SMI_spec"
-date: "2020-04-08T09:00:00+08:00"
+date: "2020-04-09T05:00:00-07:00"
 ---
 
 A service mesh is a dedicated infrastructure layer for handling service-to-service communication in a microservices environment. Service Mesh Interface (SMI) is a widely-adopted open specification that defines a set of APIs for the most common service mesh use cases (traffic policy, telemetry, and shifting) and enables interoperability of service meshes. The community has been growing rapidly since the SMI announcement at KubeCon EU in May 2019. We are pleased to announce that SMI is now a [CNCF Sandbox project](https://www.cncf.io/sandbox-projects/); we're excited to have a neutral home for our community collaboration.
