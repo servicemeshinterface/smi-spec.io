@@ -2,6 +2,7 @@
 {{ $desc    := site.Params.description }}
 {{ $author  := .Params.author | default site.Author }}
 {{ $handle  := site.Params.twitter }}
+{{ $cardType := "summary_large_image" }}
 {{ $cardImg := "img/twitter-card.png" | absURL }}
 {{ $isPage  := eq .Kind "page" }}
 <meta charset="utf-8">
@@ -24,7 +25,7 @@
 {{ end }}
 
 {{/* Twitter Card */}}
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{{ $cardType }}">
 <meta name="twitter:site" content="{{ $handle }}">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">

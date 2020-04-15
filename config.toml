@@ -13,6 +13,9 @@ features = [
     "Space for the ecosystem to innovate with service mesh technology",
 ]
 
+cardImg = "../twitter-card-sm.png"
+cardType = "summary"
+
 capabilities = [
     "Traffic policy – apply policies like identity and transport encryption across services",
     "Traffic telemetry – capture key metrics like error rate and latency between services",
