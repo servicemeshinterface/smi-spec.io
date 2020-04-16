@@ -1,4 +1,4 @@
-baseURL = "https://smi-spec.io"
+baseURL = "https://smi-spec.io/"
 title = "SMI"
 theme = "smi"
 languageCode = "en-us"
@@ -12,6 +12,9 @@ features = [
     "Flexibility to support new service mesh capabilities over time",
     "Space for the ecosystem to innovate with service mesh technology",
 ]
+
+cardImg = "img/twitter-card-sm.png"
+cardType = "summary"
 
 capabilities = [
     "Traffic policy – apply policies like identity and transport encryption across services",
