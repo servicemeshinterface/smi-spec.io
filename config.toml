@@ -13,7 +13,7 @@ features = [
     "Space for the ecosystem to innovate with service mesh technology",
 ]
 
-cardImg = "../twitter-card-sm.png"
+cardImg = "img/twitter-card-sm.png"
 cardType = "summary"
 
 capabilities = [
