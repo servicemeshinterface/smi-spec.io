@@ -4,11 +4,17 @@ A simple website for the [SMI](https://github.com/servicemeshinterface/smi-spec)
 
 # Editing Content
 
-smi-spec.io is static site. The landing page content can be edited at `themes/smi/layouts/index.html`, and the rest under `/contents`. Post, tag, category taxonomy is available in hugo should we want to expand in the future.
+smi-spec.io is a static site. The landing page content can be edited at `themes/smi/layouts/index.html`, and the rest under `/content`. Post, tag, and category taxonomy is available in Hugo should we want to expand in the future.
 
-## How to Write a Blog Post
+## How to Add a Blog Post
 
-Blog posts are created via pull requests. The following steps are used to add them:
+If you'd like to submit an SMI-related blog post to the site, please follow these guidelines:
+
+1. Blog posts should be useful and informative for readers, who won't need to buy specific commercial offerings in order to learn something
+1. Blog posts do not need to exclusively cover open source software, but also should not be primarily product pitches
+1. Blog posts should disclose and link to the employer of the person writing the blog post
+
+Blog posts are created via pull requests, and should be approved by two reviewers (at least one of whom should work for a different employer than the blog post submitter). You can test locally with hugo and/or see the preview after submitting the pull request.
 
 Add a new file to the `content/blog/` directory whose name is the published date and the title. The files must be markdown formatted. See the [existing titles for examples](https://github.com/servicemeshinterface/smi-spec.io/tree/master/content/blog/) of the format. Add the header meta-data to the file using this format (note the permalink structure). Recommended but optional fields are authorname which should be name(s); these are displayed verbatim. authorlink is the link used by authorname.
 
@@ -24,7 +30,7 @@ date: "2020-03-15T09:00:00+08:00"
 
 Add the content below the ``---`` as Markdown. The title does not need to be included in this section. Any images should be placed in the `/content/blog/images/` directory. Images should be losslessly compressed to reduce their size. Tools, such as ImageOptim, can be used.
 
-To summarize the content on the blog index page, insert a <!--more--> break in your markdown. This will truncate the content with a Read More link.
+To summarize the content on the blog index page, insert a ``<!--more-->`` break in your markdown. This will truncate the content with a Read More link.
 
 ## How to Add Your Logo
 
