@@ -22,6 +22,9 @@ ecosystem:
 - title: Service Mesh Hub
   url: https://solo.io/products/service-mesh-hub
   logo: logo-service-mesh-hub.png
+- title: Open Service Mesh
+  url: https://openservicemesh.io
+  logo: logo-openservicemesh.png
 partners:
 - title: Microsoft
   url: https://microsoft.com
