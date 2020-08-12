@@ -5,8 +5,6 @@ ecosystem:
 - title: Flagger
   url: https://flagger.app
   logo: logo-flagger.png
-- title: Istio
-  url: https://github.com/deislabs/smi-adapter-istio
 - title: Linkerd
   url: https://linkerd.io
   logo: logo-linkerd.png
@@ -16,15 +14,18 @@ ecosystem:
 - title: Meshery
   url: https://meshery.io
   logo: logo-meshery.png
+- title: Open Service Mesh
+  url: https://openservicemesh.io
+  logo: logo-openservicemesh.svg
 - title: Rio
   url: https://rio.io
   logo: logo-rio.png
 - title: Service Mesh Hub
   url: https://solo.io/products/service-mesh-hub
   logo: logo-service-mesh-hub.png
-- title: Open Service Mesh
-  url: https://openservicemesh.io
-  logo: logo-openservicemesh.png
+- title: Istio
+  logo: istio-text.png
+  url: https://github.com/deislabs/smi-adapter-istio
 partners:
 - title: Microsoft
   url: https://microsoft.com
