@@ -24,8 +24,8 @@ ecosystem:
   url: https://solo.io/products/service-mesh-hub
   logo: logo-service-mesh-hub.png
 - title: Istio
-  logo: istio-text.png
-  url: https://github.com/deislabs/smi-adapter-istio
+  logo: logo-istio.png
+  url: https://istio.io/
 partners:
 - title: Microsoft
   url: https://microsoft.com
