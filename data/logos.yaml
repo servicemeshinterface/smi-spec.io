@@ -26,6 +26,9 @@ ecosystem:
 - title: Istio
   logo: logo-istio.png
   url: https://istio.io/
+- title: Argo
+  logo: logo-argo.png
+  url: https://argoproj.github.io/argo-rollouts
 partners:
 - title: Microsoft
   url: https://microsoft.com
