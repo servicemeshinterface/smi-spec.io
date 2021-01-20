@@ -29,6 +29,9 @@ ecosystem:
 - title: Argo
   logo: logo-argo.png
   url: https://argoproj.github.io/argo-rollouts
+- title: NGINX Service Mesh
+  url: https://www.nginx.com/products/nginx-service-mesh/
+  logo: logo-nginx.png
 partners:
 - title: Microsoft
   url: https://microsoft.com
