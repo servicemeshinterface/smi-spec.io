@@ -16,7 +16,7 @@ If you'd like to submit an SMI-related blog post to the site, please follow thes
 
 Blog posts are created via pull requests, and should be approved by two reviewers (at least one of whom should work for a different employer than the blog post submitter). You can test locally with hugo and/or see the preview after submitting the pull request.
 
-Add a new file to the `content/blog/` directory whose name is the published date and the title. The files must be markdown formatted. See the [existing titles for examples](https://github.com/servicemeshinterface/smi-spec.io/tree/master/content/blog/) of the format. Add the header meta-data to the file using this format (note the permalink structure). Recommended but optional fields are authorname which should be name(s); these are displayed verbatim. authorlink is the link used by authorname.
+Add a new file to the `content/blog/` directory whose name is the published date and the title. The files must be markdown formatted. See the [existing titles for examples](https://github.com/servicemeshinterface/smi-spec.io/tree/main/content/blog/) of the format. Add the header meta-data to the file using this format (note the permalink structure). Recommended but optional fields are authorname which should be name(s); these are displayed verbatim. authorlink is the link used by authorname.
 
 ```
 ---
@@ -44,8 +44,8 @@ To add the logo of your company or organization to the landing page:
 ## Notes
 
 * built with the [Hugo](https://gohugo.io/) static site generator
-* custom smi theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/servicemeshinterface/smi-spec.io/tree/master/themes/smi)
-* deployed to [Netlify](https://app.netlify.com/sites/smi-spec/deploys) via merges to master. (@flynnduism, @lachie83 and @bridgetkromhout are admins)
+* custom smi theme uses [Paper](https://github.com/nanxiaobei/hugo-paper/) as a base, with [Foundation](https://foundation.zurb.com/sites/docs/v/5.5.3/) on top and the [SMI custom sass](https://github.com/servicemeshinterface/smi-spec.io/tree/main/themes/smi)
+* deployed to [Netlify](https://app.netlify.com/sites/smi-spec/deploys) via merges to main. (@flynnduism, @lachie83 and @bridgetkromhout are admins)
 * metrics tracked via Google Analytics
 
 ## Install dependencies:
@@ -65,7 +65,7 @@ hugo serve
 
 ## Deploying the site:
 
-The site auto deploys the master branch via [Netlify](https://app.netlify.com/sites/smi-spec). Once pull requests are merged the changes will appear at smi-spec.io after a couple of minutes. Check the [logs](https://app.netlify.com/sites/smi-spec/deploys) for details.
+The site auto deploys the main branch via [Netlify](https://app.netlify.com/sites/smi-spec). Once pull requests are merged the changes will appear at smi-spec.io after a couple of minutes. Check the [logs](https://app.netlify.com/sites/smi-spec/deploys) for details.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8ffabb30-f2f4-45cc-b0fa-1b4adda00b5e/deploy-status)](https://app.netlify.com/sites/helm-merge/deploys)
 
