@@ -5,6 +5,9 @@ ecosystem:
 - title: Flagger
   url: https://flagger.app
   logo: logo-flagger.png
+- title: Gloo Mesh
+  url: https://www.solo.io/products/gloo-mesh
+  logo: logo-gloo-mesh.svg
 - title: Linkerd
   url: https://linkerd.io
   logo: logo-linkerd.png
@@ -20,9 +23,6 @@ ecosystem:
 - title: Rio
   url: https://rio.io
   logo: logo-rio.png
-- title: Service Mesh Hub
-  url: https://solo.io/products/service-mesh-hub
-  logo: logo-service-mesh-hub.png
 - title: Istio
   logo: logo-istio.png
   url: https://istio.io/
