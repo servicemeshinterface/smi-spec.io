@@ -35,7 +35,7 @@ One class of software implements the SMI directly by consuming the APIs defined 
 While these tools may not directly implement the functionality covered by the SMI, they play an essential role in the ecosystem by adopting and managing the technologies which support the SMI specification:
 
 *   Weaveworks Flagger – functions as a control plane for Kubernetes deployment while supporting multiple service mesh implementations
-*   Service Mesh Hub – serves as a management plane for several Service Mesh implementations
+*   Meshery – serves as a management plane for several Service Mesh implementations
 *   RIO – serves as a management plane for Linkerd
 
 ## Introducing Maesh: a simpler service mesh
