@@ -4,7 +4,7 @@ slug: "validating-smi-conformance-with-meshery"
 authorname: "Lee Calcote"
 author: "@lcalcote"
 authorlink: "https://twitter.com/lcalcote"
-date: "2021-04-23T05:00:00-07:00"
+date: "2021-04-26T05:00:00-13:00"
 ---
 
 ![SMI Conformance Checklist](/img/blog/validating-smi-conformance-with-meshery/smi-conformance.png#left)
