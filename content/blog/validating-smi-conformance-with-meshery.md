@@ -33,7 +33,7 @@ Meshery, the service mesh management plane, is service mesh agnostic, which is a
 
 ![SMI Conformance Tool](/img/blog/validating-smi-conformance-with-meshery/meshery-service-mesh-compliance-tool.png).
 
-Meshery is ideal tooling in that it provides lifecycle management of a large number of service meshes and sample applications which need to be provisioned, tested, and deprovisioned in the process of validating conformance. And  Meshery is capable of generating load and verifying test assertions. Meshery will be extended to validate any service mesh that claims to implement and conform SMI specifications. And, more broadly, to leverage the same tooling to validate service mesh standards at-large, including SMI and [Service Mesh Performance](https://smp-spec.io) (SMP).
+Meshery is ideal tooling in that it provides lifecycle management of a large number of service meshes and sample applications which need to be provisioned, tested, and deprovisioned in the process of validating conformance. And  Meshery is capable of generating load and verifying test assertions. Meshery will be extended to validate any service mesh that claims to implement and conform SMI specifications. And, more broadly, Meshery will leverage the same tooling to validate service mesh standards at-large, including SMI and [Service Mesh Performance](https://smp-spec.io) (SMP).
 
 ## Defining Conformance
 
