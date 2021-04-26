@@ -814,6 +814,19 @@ article.post {
         border-bottom: 3px solid lighten($bluel, 12.5%);
       }
     }
+
+    img[src*="#left"] {
+      width: 30%;
+      float: left;
+      margin-right: 1rem;
+   }
+   img[src*="#center"] {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0rem;
+    text-align: center;
+ }
   }
 
   &.blog-single {
