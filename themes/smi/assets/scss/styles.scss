@@ -818,15 +818,15 @@ article.post {
     img[src*="#left"] {
       width: 30%;
       float: left;
-      margin-right: 1rem;
-   }
-   img[src*="#center"] {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 0rem;
-    text-align: center;
- }
+      margin-right: 3rem;
+    }
+    img[src*="#center"] {
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-bottom: 0rem;
+      text-align: center;
+    }
   }
 
   &.blog-single {
