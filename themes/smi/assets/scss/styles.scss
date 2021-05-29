@@ -914,6 +914,20 @@ article.post {
     }
   }
 
+  .sep-sides {
+    &::before,
+    &::after {
+      width: 15%;
+    }
+  }
+
+  .sep-sides-hr {
+    &::before,
+    &::after {
+      width: 30%;
+    }
+  }
+
   .height-full {
     min-height: 100vh !important;
   }
