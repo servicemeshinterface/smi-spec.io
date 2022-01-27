@@ -1,9 +1,9 @@
 ---
 title: "Pipelining Service Mesh Specifications"
 slug: "pipelining-service-mesh-specifications"
-authorname: "Layer5 Team"
-author: "@layer5"
-authorlink: "https://twitter.com/layer5"
+authorname: "Lee Calcote"
+author: "@lcalcote"
+authorlink: "https://twitter.com/lcalcote"
 date: "2022-01-26T05:00:00-13:00"
 ---
 ![Performance Management Dashboard](/img/blog/pipelining-service-mesh-specifications/service-mesh-specifications.png#left)
