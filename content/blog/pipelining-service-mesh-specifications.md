@@ -4,10 +4,10 @@ slug: "pipelining-service-mesh-specifications"
 authorname: "Lee Calcote"
 author: "@lcalcote"
 authorlink: "https://twitter.com/lcalcote"
-date: "2022-01-26T05:00:00-13:00"
+date: "2022-02-17T05:00:00-13:00"
 ---
 ![Performance Management Dashboard](/img/blog/pipelining-service-mesh-specifications/service-mesh-specifications.png#left)
-With growing adoption of service meshes in cloud native environments, service mesh abstractions - service mesh-neutral specifications - have emerged. [Service Mesh Performance](https://smp-spec.io/) and Service Mesh Interface are two open specifications that address the need for universal interfaces for interacting with and managing any type of service mesh. Let’s examine what each specification provides.
+With growing adoption of service meshes in cloud native environments, service mesh abstractions and service mesh-neutral specifications have emerged. [Service Mesh Performance](https://smp-spec.io/) and Service Mesh Interface are two open specifications that address the need for universal interfaces for interacting with and managing any type of service mesh. What do each of these specification provide?
 
 Service Mesh Performance standardizes service mesh value measurement, characterizing any deployment's performance by capturing the details of infrastructure capacity, service mesh configuration and workload metadata.
 
@@ -15,9 +15,9 @@ Service Mesh Interface provides a standard interface for service meshes on Kuber
 
 As a service mesh agnostic tool that provides lifecycle and performance management of a large number of [(10+) service meshes](https://layer5.io/service-mesh-landscape), Kubernetes applications, service mesh patterns and WebAssembly filters, [Meshery](https://meshery.io/) is the ideal tool for the job when it comes to implementing these specifications.
 
-Meshery also comes with two new GitHub Actions that do exactly this. The [Meshery SMI Conformance Action](https://github.com/layer5io/meshery-smi-conformance-action) which validates [SMI conformance in your pipeline](https://meshery.io/blog/validating-smi-conformance-with-meshery) and the [Meshery SMP Action](https://github.com/layer5io/meshery-smp-action) which runs [SMP compatible performance benchmarks](https://docs.meshery.io/functionality/performance-management).
+Meshery also comes with two new GitHub Actions make it easy to integrate SMI and SMP into your GitHub workflows. The [Meshery SMI Conformance Action](https://github.com/layer5io/meshery-smi-conformance-action) validates the adherance of your service mesh deployment against [SMI's spcdifications](https://meshery.io/blog/validating-smi-conformance-with-meshery) using a standard set of conformance tests. Output of conformance tests are presented on the SMI Conformance Dashboard(https://meshery.io/service-mesh-interface). The [Meshery SMP Action](https://github.com/layer5io/meshery-smp-action) integrates into your application pipeline, performing [SMP compatible performance benchmarks](https://docs.meshery.io/functionality/performance-management) within your environment and in accordance with your load requirements and service mesh configuration.
 
-But how do we use these actions? What do they offer? Let’s find out!
+Let's take a closer look at each of these Actions.
 
 #### Service Mesh Interface Conformance GitHub Action
 
@@ -51,7 +51,7 @@ An example of the action configuration which runs on every release is shown belo
            mesh_deployed: false
    </code></pre></div>
 
-You can also bring in their own cluster with specific capabilities and with a service mesh already installed.
+You can also bring in your own cluster with specific capabilities and with a service mesh already installed.
 
 <div class="codewrapper">
   <pre><code>
@@ -167,4 +167,3 @@ See this sample GitHub workflow ([action.yml](https://github.com/layer5io/mesher
 ![Performance Management Dashboard](/img/blog/pipelining-service-mesh-specifications/service-mesh-performance-profile-test-results.png)
 
 The results from the tests are updated on the Performance Management dashboard in Meshery. To learn more about interpreting the test results, check out [this guide](https://docs.meshery.io/guides/interpreting-performance-test-results). You can always checkout the [Meshery User Guides](https://docs.meshery.io/guides) to dive deep into these features.
-
