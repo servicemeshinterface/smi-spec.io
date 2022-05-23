@@ -2,6 +2,9 @@ ecosystem:
 - title: Consul Connect
   url: https://consul.io/docs/connect
   logo: logo-consul.png
+- title: Armory
+  url: https://www.armory.io/products/continuous-deployment-as-a-service/
+  logo: armory-blue-01.png
 - title: Flagger
   url: https://flagger.app
   logo: logo-flagger.png
@@ -51,6 +54,9 @@ partners:
 - title: Rancher
   url: https://rancher.com
   logo: logo-rancher.png
+- title: Armory
+  url: https://www.armory.io/products/continuous-deployment-as-a-service/
+  logo: armory-blue-01.png
 - title: Docker
   url: https://docker.com
   logo: logo-docker.png
