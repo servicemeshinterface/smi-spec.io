@@ -1108,3 +1108,15 @@ article.post {
     display: none !important;
   }
 }
+
+.banner {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
