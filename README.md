@@ -1,8 +1,8 @@
-![smi-github](https://user-images.githubusercontent.com/686194/57564913-f8d4cf00-7368-11e9-879f-588440bc4cb5.png)
+# :warning: This project is [ARCHIVED](https://www.cncf.io/archived-projects/). [Learn more](https://www.cncf.io/blog/2023/10/03/cncf-archives-the-service-mesh-interface-smi-project/)
 
 A simple website for the [SMI](https://github.com/servicemeshinterface/smi-spec) specification - [smi-spec.io](https://smi-spec.io)
 
-# Editing Content
+# ~Editing Content~
 
 smi-spec.io is a static site. The landing page content can be edited at `themes/smi/layouts/index.html`, and the rest under `/content`. Post, tag, and category taxonomy is available in Hugo should we want to expand in the future.
 
@@ -39,7 +39,7 @@ To add the logo of your company or organization to the landing page:
 1. Add your logo to the [`themes/smi/static/img/logos`](themes/smi/static/img/logos) directory and name it `logo-*.png` where `*` is a slug for your org name (e.g. `logo-acme.png`).
 1. Add an entry to either the `ecosystem` or `partners` list in [`data/logos.yaml`](data/logos.yaml). Include the following information: an org title, a website URL, and the filename of the logo.
 
-# Site Development
+# ~Site Development~
 
 ## Notes
 
